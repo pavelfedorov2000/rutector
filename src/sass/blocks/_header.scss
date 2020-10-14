@@ -1,0 +1,191 @@
+.header {
+    &__top {
+        background: #F8F9FA;
+        padding: 7px 0;
+    }
+    &__inner {
+        @include flex;
+    }
+    &__city {
+        position: relative;
+        padding-left: 17px;
+        font-size: 13px;
+        line-height: 16px;
+        color: #57667F;
+        &:before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: 0;
+            width: 11px;
+            height: 15px;
+            background-image: url('../icons/location.svg');
+        }
+    }
+    &__menu-list {
+        display: flex;
+    }
+    &__menu-item {
+        padding: 1px 20px;
+        border-left: 1px solid #DEE0DD;
+        &:last-child {
+            border-right: 1px solid #DEE0DD;
+        }
+    }
+    &__menu-link {
+        font-size: 13px;
+        line-height: 16px;
+        color: #57667F;
+    }
+    &__main {
+        padding: 20px 0 15px;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+    &__logo-descr {
+        max-width: 116px;
+        font-size: 15px;
+        line-height: 18px;
+        color: #525C6F;
+        margin-left: 33px;
+    }
+    &__main-right {
+        @include flex;
+        align-items: flex-end;
+    }
+    &__contact-item {
+        margin-right: 57px;
+        &:nth-child(2) {
+            margin-right: 66px;
+        }
+        &:nth-child(3) {
+            margin-right: 69px;
+        }
+    }
+    &__contact-link {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #2B3648;
+        border-bottom: 1px solid #2B3648;
+    }
+    &__contact-img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 8px;
+    }
+    &__contact-hours {
+        font-size: 12px;
+        line-height: 14px;
+        color: #57667F;
+        margin-bottom: 4px;
+    }
+    &__contact-phone {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+        color: #2B3648;
+    }
+    &__basket {
+        display: flex;
+    }
+    &__basket-img {
+        position: relative;
+        margin-right: 27px;
+    }
+    &__basket-num {
+        position: absolute;
+        top: -5px;
+        right: -20px;
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        background: #1976D3;
+        @include center;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 13px;
+        color: #FFFFFF;
+    }
+    &__basket-info {
+        font-size: 15px;
+        line-height: 18px;
+        color: #2B3648;
+        span {
+            display: block;
+            color: #1976D3;
+            margin-top: 7px;
+        }
+    }
+    &__bottom {
+        position: relative;
+        background: #0054A4;
+        height: 53px;
+    }
+    &__catalog {
+        width: 300px;
+        height: 53px;
+        background: #1976D3;
+        background-image: url('../icons/catalog-btn.svg');
+        background-repeat: no-repeat;
+        background-position: 21px 20px;
+        display: flex;
+        align-items: center;
+        padding-left: 47px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        @include btn;
+    }
+    &__search {
+        height: 41px;
+        display: flex;
+        background: #0D4E8B;
+        border-radius: 4px;
+        padding: 3px 4px;
+    }
+    &__search-input {
+        width: 721px;
+        height: 100%;
+        padding: 12px 13px 10px;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(82, 92, 111, 0.71);
+        @include btn;
+        &::placeholder {
+            color: rgba(82, 92, 111, 0.71);
+        }
+    }
+    &__search-btn {
+        width: 112px;
+        height: 100%;
+        background: #78808C;
+        border-radius: 0px 4px 4px 0px;
+        background-image: url('../icons/search.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        @include btn;
+    }
+    &__promotion {
+        position: relative;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        padding-left: 30px;
+        span {
+            border-bottom: 1px solid #fff;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 19px;
+            height: 17px;
+            background-image: url('../icons/promotion.png');
+        }
+    }
+}

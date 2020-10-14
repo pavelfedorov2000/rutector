@@ -1,0 +1,105 @@
+.brand-page {
+    &__title {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 38px;
+        color: #617087;
+    }
+    &__slider {
+        max-width: 1238px;
+        margin: 0 auto;
+    }
+    &__slider-item {
+        min-height: 220px;
+        border: 1px solid #DEE0DD;
+        border-radius: 4px;
+        padding: 4px 15px 12px;
+        margin: 0 11px;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #2B3648;
+        img {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    &__products-title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #617087;
+        margin-bottom: 40px;
+    }
+}
+
+.brand-info {
+    a {
+        border-bottom: 1px solid #2B3648;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0 62px;
+    }
+    &__list {
+        margin-top: 20px;
+        li {
+            &:first-child {
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: -3px;
+                    right: -10px;
+                    background-image: url('../icons/italy.png');
+                    width: 28px;
+                    height: 19px;
+                }
+            }
+        }
+    }
+    &__benefits-title {
+        font-size: 20px;
+        line-height: 22px;
+        color: #617087;
+        margin-bottom: 20px;
+    }
+    &__benefits-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 806px;
+        min-height: 394px;
+        padding-left: 30px;
+        li {
+            position: relative;
+            padding-left: 34px;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 18px;
+                height: 18px;
+                background-image: url('../icons/list-icon.svg');
+            }
+        }
+    }
+    &__benefits-images {
+        img {
+            display: block;
+            margin-bottom: 54px;
+        }
+    }
+}
+
+.popular-products {
+    &__slider {
+        max-width: 1244px;
+        margin: 0 auto;
+    }
+    &__slider-item {
+        margin: 0 14px;
+    }
+}

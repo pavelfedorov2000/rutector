@@ -1,0 +1,40 @@
+.banner {
+    padding-top: 80px;
+    margin-bottom: 80px;
+    &__slider-item {
+        position: relative;
+    }
+    &__slider-img {
+        object-fit: cover;
+        min-height: 473px;
+    }
+    &__slider-btn {
+        &--prev {
+            left: 0;
+        }
+        &--next {
+            right: 0;
+        }
+    }
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 30px;
+    right: 43px;
+    .slick-active button {
+        background: rgba(43, 54, 72, 0.75);
+    }
+    li {
+        display: inline-block;
+        padding: 0 7px;
+    }
+    button {
+        padding: 0;
+        font-size: 0;
+        width: 14px;
+        height: 14px;
+        background: rgba(43, 54, 72, 0.25);
+        @include btn;
+    }
+}

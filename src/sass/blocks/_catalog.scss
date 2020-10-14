@@ -1,0 +1,189 @@
+.catalog {
+    &__inner {
+        max-width: 1294px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2px;
+    }
+    &__item {
+        max-width: 210px;
+        margin-bottom: 15px;
+        margin-right: 145px;
+        &:nth-child(1), &:nth-child(5), &:nth-child(9) {
+            max-width: 212px;
+        }
+        &:nth-child(13) {
+            max-width: 215px;
+        }
+        &:nth-child(4n+4) {
+            margin-right: 0;
+        }
+    }
+    &__item-img {
+        object-fit: contain;
+        border-bottom: 1px solid #DEE0DD;
+    }
+    &__item-title {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #2B3648;
+        margin-top: 10px;
+        &:hover {
+            span {
+                border-bottom: 1px solid #2B3648;
+            }
+        }
+    }
+    &__list {
+        display: none;
+        &--active {
+            display: block;
+        }
+        &--line {
+            display: none;
+        }
+        &--grid {
+            display: none;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+    &__list--active.catalog__list--grid {
+        display: flex;
+    }
+    &__list--active.catalog__list--line {
+        display: block;
+    }
+    &__list-card {
+        margin-bottom: 30px;
+    }
+}
+
+.catalog-card {
+    position: relative;
+    padding: 20px 36px 13px 39px;
+    max-width: 100%;
+    min-height: 294px;
+    margin-bottom: 9px;
+    &__inner {
+        display: flex;
+    }
+    &__info {
+        max-width: 621px;
+        margin: 0 auto 0 50px;
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+    &__info-list {
+        margin-bottom: 10px;
+    }
+    &__info-item {
+        font-size: 14px;
+        line-height: 17px;
+        color: #617087;
+        margin-bottom: 5px;
+        span {
+            font-weight: 700;
+        }
+    }
+    &__aside {
+        width: 180px;
+        .basket-btn {
+            font-size: 16px;
+            padding: 1px 22px 1px 65px;
+            margin: 26px 0 10px;
+            background-position: 20px center;
+        }
+        .count-btn {
+            font-size: 16px;
+            font-weight: 700;
+            padding: 1px 24px;
+            margin-bottom: 15px;
+        }
+    }
+    &__balance {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #DEE0DD;
+        padding-bottom: 15px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #617087;
+        margin-bottom: 16px;
+    }
+    &__balance-dots {
+        display: flex;
+        margin-left: 10px;
+    }
+    &__balance-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #C4C4C4;
+        margin-right: 5px;
+        &--active {
+            background: #0054A4;
+        }
+    }
+    &__balance-question {
+        display: flex;
+        align-items: center;
+        margin-left: 3px;
+    }
+    &__balance-num {
+        color: #2B3648;
+        margin-left: 16px;
+    }
+    &__price {
+        font-size: 26px;
+        line-height: 31px;
+        margin-bottom: 4px;
+    }
+    &__price-old {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 1px;
+    }
+    &__discount-period {
+        display: none;
+        font-size: 14px;
+        line-height: 17px;
+        color: #617087;
+    }
+    &--discount {
+        &:before {
+            content: '-35%';
+            top: 10px;
+            padding: 3px 7px;
+            position: absolute;
+            left: 11px;
+            background: #EF3E42;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        .catalog-card {
+            &__price {
+                color: #EF3E42;
+            }
+            &__price-old {
+                display: block;
+            }
+            &__discount-period {
+                display: block;
+            }
+        }
+    }
+}

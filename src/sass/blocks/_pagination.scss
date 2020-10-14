@@ -1,0 +1,70 @@
+.pagination {
+    margin: 40px 0 10px;
+    &__box {
+        padding: 12px 37px 13px 21px;
+        background: #F7F7F7;
+        border-radius: 12px;
+    }
+    &__box-inner {
+        @include flex;
+        p {
+            font-size: 14px;
+            line-height: 22px;
+            color: #636563;
+        }
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__list-item {
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+        border: none;
+        @include center;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #2B3648;
+        margin: 0 2px;
+        transition: .3s all;
+        a {
+            width: 100%;
+            height: 100%;
+            @include center;
+            border-radius: 8px;
+            transition: .3s all;
+        }
+        &--active {
+            background: #FFFFFF;
+        }
+        &:hover {
+            a {
+                background: #1976D3;
+                color: #FFFFFF;
+            }
+        }
+    }
+    &__btn {
+        background-color: transparent;
+        @include btn;
+        margin-left: 17px;
+        .catalog__list {
+            display: none;
+        }
+        svg path {
+            transition: .3s all;
+        }
+        &:hover {
+            svg path {
+                fill: #2B3648;
+            }
+        }
+        &--active {
+            svg path {
+                fill: #2B3648;
+            }
+        }
+    }
+}

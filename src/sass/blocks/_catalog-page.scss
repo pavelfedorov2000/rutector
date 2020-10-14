@@ -1,0 +1,226 @@
+.catalog-page {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+        width: 940px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #617087;
+        margin-bottom: 40px;
+        &--big {
+            font-size: 32px;
+            line-height: 38px;
+        }
+    }
+    &__slider {
+        max-width: 862px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    &__slider-item {
+        margin: 0 9px;
+    }
+    &__catalog-item {
+        margin-right: 32px;
+        margin-bottom: 10px;
+    }
+}
+
+.catalog-aside {
+    width: 300px;
+    &__menu-box {
+        border: 1px solid #EFEFEF;
+        padding: 22px 12px 40px 21px;
+        margin-bottom: 40px;
+    }
+    &__menu-title {
+        position: relative;
+        font-size: 18px;
+        line-height: 22px;
+        color: #EF3E42;
+        padding-left: 29px;
+        span {
+            border-bottom: 1px solid #EF3E42;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url('../icons/aside-bell.png');
+            width: 19px;
+            height: 17px;
+        }
+        &:hover {
+            color: #EF3E42; 
+        }
+    }
+    &__menu-list {
+        margin-top: 19px;
+    }
+    &__menu-item {
+        position: relative;
+        max-width: 240px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #2B3648;
+        margin-bottom: 20px;
+        &:after {
+            content: '';
+            @include centerY;
+            right: -23px;
+            background-image: url('../icons/arrows/aside-menu.svg');
+            width: 6px;
+            height: 10px;
+        }
+    }
+}
+
+.product {
+    &__info {
+        font-size: 16px;
+        line-height: 22px;
+        color: #2B3648;
+        margin-bottom: 41px;
+        a > span {
+            font-weight: 700;
+            color: #0054A4;
+        }
+    }
+    &__list-title {
+        font-size: 20px;
+        line-height: 22px;
+        color: #617087;
+        margin-bottom: 20px;
+    }
+    &__list {
+        padding-left: 40px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #2B3648;
+    }
+}
+
+.popular {
+    &__item {
+        margin-bottom: 40px;
+    }
+    &__header {
+        @include flex;
+        border-bottom: 1px solid #DEE0DD;
+    }
+    &__title {
+        position: relative;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+        padding-bottom: 12px;
+        border-bottom: 3px solid #B2B9C1;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 28px;
+    }
+    &__card {
+        max-width: 226px;
+    }
+    &__name {
+        margin-bottom: 30px;
+    }
+    &__all {
+        display: inline-block;
+        background: #78808C;
+        border-radius: 3px;
+        padding: 1px 30px;
+        transition: .3s all;
+        span {
+            position: relative;
+            font-size: 15px;
+            line-height: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font-weight: bold;
+            padding-right: 23px;
+            &:before {
+                content: '';
+                position: absolute;
+                @include centerY;
+                right: 0;
+                background-image: url('../icons/arrows/double-arrow.svg');
+                width: 13px;
+                height: 12px;
+            }
+        }
+        &:hover {
+            background: #1976D3;
+        }
+    }
+}
+
+.useful-info {
+    &__content {
+        font-size: 16px;
+        line-height: 22px;
+        color: #2B3648;
+        > strong {
+            font-weight: bold;
+        }
+    }
+    &__list {
+        padding-left: 40px;
+        margin-bottom: 40px;
+    }
+    &__list-item {
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+.hidden-text {
+    display: none;
+    margin-top: 40px;
+}
+
+.drop {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 22px;
+    color: #B2B9C1;
+    cursor: pointer;
+    margin-top: 25px;
+    svg {
+        margin-right: 10px;
+    }
+    &-hide {
+        display: none;
+    }
+    &--active {
+        color: #1976D3;
+        svg {
+            transform: rotate(180deg);
+            path {
+                stroke: #1976D3;
+            }
+        }
+        .drop {
+            &-toggle {
+                display: none;
+            }
+            &-hide {
+                display: block;
+            }
+        }
+    }
+}

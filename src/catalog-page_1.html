@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/normalize.css">
+    <link rel="stylesheet" href="vendors/slick.css">
+    <link rel="stylesheet" href="vendors/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="vendors/jquery.formstyler.css">
+    <link rel="stylesheet" href="vendors/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Rutector</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__city">
+                        Москва
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Сервис
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Клиентам
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Бренды
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Доставка и оплата
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <a class="header__logo-link" href="#">
+                            <img class="header__logo-img" src="logo/logo.svg" alt="">
+                        </a>
+                        <div class="header__logo-descr">
+                            Поставщик промышленного оборудования
+                        </div>
+                    </div>
+                    <div class="header__main-right">
+                        <div class="header__contact-item">
+                            <a class="header__contact-link" href="#">
+                                <img class="header__contact-img" src="icons/phone.svg" alt="">
+                                Обратный звонок
+                            </a>
+                        </div>
+                        <div class="header__contact-item">
+                            <a class="header__contact-link" href="#">
+                                <img class="header__contact-img" src="icons/mail.svg" alt="">
+                                Напишите нам
+                            </a>
+                        </div>
+                        <div class="header__contact-item">
+                            <div class="header__contact-hours">
+                                09:00 - 18:00 пн-пт
+                            </div>
+                            <a class="header__contact-phone" href="tel:88001000069">
+                                8 800 100-00-69
+                            </a>
+                        </div>
+                        <div class="header__basket">
+                            <div class="header__basket-img">
+                                <img src="icons/basket.svg" alt="">
+                                <span class="header__basket-num">0</span>
+                            </div>
+                            <div class="header__basket-info">
+                                Корзина
+                               <span>0 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__inner">
+                    <button class="header__catalog">
+                        <span>Каталог товаров</span>
+                    </button>
+                    <div class="header__search">
+                        <input class="header__search-input" type="search" placeholder="Поиск товаров. Введите название или артикул">
+                        <button class="header__search-btn"></button>
+                    </div>
+                    <a class="header__promotion" href="#"><span>Акции</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+        
+    <div class="catalog-page">
+        <div class="container">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list mobile-overflow">
+                    <li class="breadcrumbs__list-item">
+                        <a href="index.html">Главная страница</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li class="breadcrumbs__list-item breadcrumbs__list-item--active">
+                        <span>Насосное оборудование</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="catalog-page__inner">
+                <aside class="catalog-aside">
+                    <div class="catalog-aside__menu-box">
+                        <div class="catalog-aside__menu-inner">
+                            <a class="catalog-aside__menu-title" href="#">
+                                <span>Акции</span>
+                            </a>
+                            <ul class="catalog-aside__menu-list">
+                                <li class="catalog-aside__menu-item">
+                                    Мотопомпы
+                                </li>
+                                <li class="catalog-aside__menu-item">
+                                    Шламовые и шестеренные насосы
+                                </li>
+                                <li class="catalog-aside__menu-item">
+                                    Консольные и повысительные насосы, бустерные станции
+                                </li>
+                                <li class="catalog-aside__menu-item">
+                                    Насосы для систем отопления
+                                </li>
+                                <li class="catalog-aside__menu-item">
+                                    Фекальные и дренажные насосы
+                                </li>
+                                <li class="catalog-aside__menu-item">
+                                    Насосы химические, расходомеры
+                                </li>
+                                <li class="catalog-aside__menu-item">
+                                    Насосы пищевые
+                                </li>
+                                <li class="catalog-aside__menu-item">
+                                    Дождевальные машины
+                                </li>
+                                <li class="catalog-aside__menu-item">
+                                    Насосы двустороннего входа
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="catalog-aside__banner" href="#">
+                        <img src="img/aside-banner.jpg" alt="">
+                    </a>
+                </aside>
+                <main class="catalog-page__content">
+                    <section class="section product">
+                        <h1 class="catalog-page__title catalog-page__title--big">
+                            Насосное оборудование
+                        </h1>
+                        <p class="product__info">
+                            Компания «Рутектор» является дистрибьютором насосного оборудования всемирно известных брендов: Saer, Calpeda, Zenit, Varisco, Koshin, Subaru, Meran, Flux и др. Заказ можно оформить по телефону <a href="tel:+84996490169">8 (499) 649-01-69</a>, электронной почте <a href="mailto:info@rutector.ru"><span>info@rutector.ru</span></a> или нажав на кнопку «В корзину» в карточке товара.
+                        </p>
+                        <div class="catalog-page__slider">
+                            <div class="catalog-page__slider-item">
+                                <img class="slider__img" src="img/catalog-page-slider/1.jpg" alt="">
+                            </div>
+                            <div class="catalog-page__slider-item">
+                                <img class="slider__img" src="img/catalog-page-slider/2.jpg" alt="">
+                            </div>
+                            <div class="catalog-page__slider-item">
+                                <img class="slider__img" src="img/catalog-page-slider/3.jpg" alt="">
+                            </div>
+                            <div class="catalog-page__slider-item">
+                                <img class="slider__img" src="img/catalog-page-slider/4.jpg" alt="">
+                            </div>
+                            <div class="catalog-page__slider-item">
+                                <img class="slider__img" src="img/catalog-page-slider/1.jpg" alt="">
+                            </div>
+                            <div class="catalog-page__slider-item">
+                                <img class="slider__img" src="img/catalog-page-slider/2.jpg" alt="">
+                            </div>
+                            <div class="catalog-page__slider-item">
+                                <img class="slider__img" src="img/catalog-page-slider/3.jpg" alt="">
+                            </div>
+                            <div class="catalog-page__slider-item">
+                                <img class="slider__img" src="img/catalog-page-slider/4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="product__list-title">
+                            Почему Рутектор?
+                        </div>
+                        <ul class="product__list">
+                            <li>
+                                1. Бесплатная доставка по России*;
+                            </li>
+                            <li>
+                                2. Помощь в выборе и консультация специалиста;
+                            </li>
+                            <li>
+                                3. Собственный склад готовой продукции, запчастей, комплектующих в Москве;
+                            </li>
+                            <li>
+                                4. Поставка оборудования под заказ от изготовителя;
+                            </li>
+                            <li>
+                                5. Низкая цена благодаря прямому импорту.
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="section catalog">
+                        <h2 class="catalog-page__title">
+                            Насосное оборудование
+                        </h2>
+                        <div class="catalog__wrapper">
+                            <a class="catalog__item catalog-page__catalog-item" href="#">
+                                <img class="catalog__item-img" src="img/catalog/1.1.png" alt="">
+                                <div class="catalog__item-title">
+                                    <span>Мотопомпы</span>
+                                </div>
+                            </a>
+                            <a class="catalog__item catalog-page__catalog-item" href="#">
+                                <img class="catalog__item-img" src="img/catalog/1.2.png" alt="">
+                                <div class="catalog__item-title">
+                                    <span>Шламовые и шестеренные насосы</span>
+                                </div>
+                            </a>
+                            <a class="catalog__item catalog-page__catalog-item" href="#">
+                                <img class="catalog__item-img" src="img/catalog/1.3.png" alt="">
+                                <div class="catalog__item-title">
+                                    <span>Консольные и повысительные насосы, бустерные станции</span>
+                                </div>
+                            </a>
+                            <a class="catalog__item catalog-page__catalog-item" href="#">
+                                <img class="catalog__item-img" src="img/catalog/1.4.png" alt="">
+                                <div class="catalog__item-title">
+                                    <span>Насосы для систем отопления</span>
+                                </div>
+                            </a>
+                            <a class="catalog__item catalog-page__catalog-item" href="#">
+                                <img class="catalog__item-img" src="img/catalog/1.5.png" alt="">
+                                <div class="catalog__item-title">
+                                    <span>Фекальные и дренажные насосы</span>
+                                </div>
+                            </a>
+                            <a class="catalog__item catalog-page__catalog-item" href="#">
+                                <img class="catalog__item-img" src="img/catalog/1.6.png" alt="">
+                                <div class="catalog__item-title">
+                                    <span>Насосы химические, расходомеры</span>
+                                </div>
+                            </a>
+                            <a class="catalog__item catalog-page__catalog-item" href="#">
+                                <img class="catalog__item-img" src="img/catalog/1.7.png" alt="">
+                                <div class="catalog__item-title">
+                                    <span>Насосы пищевые</span>
+                                </div>
+                            </a>
+                            <a class="catalog__item catalog-page__catalog-item" href="#">
+                                <img class="catalog__item-img" src="img/catalog/1.8.png" alt="">
+                                <div class="catalog__item-title">
+                                    <span>Дождевальные машины</span>
+                                </div>
+                            </a>
+                            <a class="catalog__item catalog-page__catalog-item" href="#">
+                                <img class="catalog__item-img" src="img/catalog/1.9.png" alt="">
+                                <div class="catalog__item-title">
+                                    <span>Насосы двустороннего входа</span>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="section popular">
+                        <h2 class="section__title section__title--gray-border">
+                            Популярные товары
+                        </h2>
+                        <div class="popular__item">
+                            <div class="popular__header">
+                                <div class="section__title section__title--gray-border">
+                                    Мотопомпы
+                                </div>
+                                <a class="more" href="#">
+                                    Посмотреть все товары
+                                </a>
+                            </div>
+                            <ul class="popular__inner">
+                                <li class="product__card product__card--bestseller popular__card">
+                                    <div class="product__card-inner">
+                                        <img class="product__img" src="img/motor pumps/1.png" alt="">
+                                        <div class="product__descr">
+                                            <div class="popular__name product__name">
+                                                Бензиновая мотопомпа Koshin SEV-25L (2х такт.)
+                                            </div>
+                                            <div class="product__price">
+                                                15 554 ₽
+                                            </div>
+                                            <button class="product__btn">
+                                                в корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__card product__card--new popular__card">
+                                    <div class="product__card-inner">
+                                        <img class="product__img" src="img/motor pumps/2.png" alt="">
+                                        <div class="product__descr">
+                                            <div class="popular__name product__name">
+                                                Бензиновая мотопомпа Koshin SEH-80JP
+                                            </div>
+                                            <div class="product__price">
+                                                27 997 ₽
+                                            </div>
+                                            <button class="product__btn">
+                                                в корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__card popular__card">
+                                    <div class="product__card-inner">
+                                        <img class="product__img" src="img/motor pumps/3.png" alt="">
+                                        <div class="product__descr">
+                                            <div class="popular__name product__name">
+                                                Дизельная мотопомпа DaiShin SCR-80YD
+                                            </div>
+                                            <div class="product__price product__price--old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product__price product__price--new">
+                                                83 485 ₽
+                                            </div>
+                                            <button class="product__btn">
+                                                в корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__card popular__card">
+                                    <div class="product__card-inner">
+                                        <img class="product__img" src="img/motor pumps/4.png" alt="">
+                                        <div class="product__descr">
+                                            <div class="popular__name product__name">
+                                                Дизельная мотопомпа VAR 12-400 FZD24 G10 TRAILER
+                                            </div>
+                                            <div class="product__price">
+                                                4 423 426 ₽
+                                            </div>
+                                            <button class="product__btn">
+                                                в корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="popular__item">
+                            <div class="popular__header">
+                                <div class="section__title section__title--gray-border">
+                                    Циркуляционные насосы
+                                </div>
+                                <a class="more" href="#">
+                                    Посмотреть все товары
+                                </a>
+                            </div>
+                            <ul class="popular__inner">
+                                <li class="product__card popular__card">
+                                    <div class="product__card-inner">
+                                        <img class="product__img" src="img/pump.png" alt="">
+                                        <div class="product__descr">
+                                            <div class="popular__name product__name">
+                                                Циркуляционный насос Calpeda NC3 15-40/130...
+                                            </div>
+                                            <div class="product__price">
+                                                7 169 ₽
+                                            </div>
+                                            <button class="product__btn">
+                                                в корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__card popular__card">
+                                    <div class="product__card-inner">
+                                        <img class="product__img" src="img/pump.png" alt="">
+                                        <div class="product__descr">
+                                            <div class="popular__name product__name">
+                                                Циркуляционный насос Calpeda NC3 25-60/130...
+                                            </div>
+                                            <div class="product__price">
+                                                7 383 ₽
+                                            </div>
+                                            <button class="product__btn">
+                                                в корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__card popular__card">
+                                    <div class="product__card-inner">
+                                        <img class="product__img" src="img/pump.png" alt="">
+                                        <div class="product__descr">
+                                            <div class="popular__name product__name">
+                                                Циркуляционный насос Calpeda NC3 25-70/130...
+                                            </div>
+                                            <div class="product__price">
+                                                9 410 ₽
+                                            </div>
+                                            <button class="product__btn">
+                                                в корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__card popular__card">
+                                    <div class="product__card-inner">
+                                        <img class="product__img" src="img/pump.png" alt="">
+                                        <div class="product__descr">
+                                            <div class="popular__name product__name">
+                                                Циркуляционный насос Calpeda NC3 32-120/130...
+                                            </div>
+                                            <div class="product__price">
+                                                31 929 ₽
+                                            </div>
+                                            <button class="product__btn">
+                                                в корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="popular__item">
+                            <div class="popular__header">
+                                <div class="section__title section__title--gray-border">
+                                    Промышленные погружные насосы
+                                </div>
+                                <a class="more" href="#">
+                                    Посмотреть все товары
+                                </a>
+                            </div>
+                            <ul class="popular__inner">
+                                <li class="product__card product__card--bestseller popular__card">
+                                    <div class="product__card-inner">
+                                        <img class="product__img" src="img/industrial pumps/1.png" alt="">
+                                        <div class="product__descr">
+                                            <div class="popular__name product__name">
+                                                Погружной фекальный насос Zenit MAN 400/2/80 A1FT...
+                                            </div>
+                                            <div class="product__price">
+                                                163 262 ₽
+                                            </div>
+                                            <button class="product__btn">
+                                                в корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__card popular__card">
+                                    <div class="product__card-inner">
+                                        <img class="product__img" src="img/industrial pumps/2.png" alt="">
+                                        <div class="product__descr">
+                                            <div class="popular__name product__name">
+                                                Погружной насос Calpeda GMN 30-80A
+                                            </div>
+                                            <div class="product__price">
+                                                198 771 ₽
+                                            </div>
+                                            <button class="product__btn">
+                                                в корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__card product__card--bestseller popular__card">
+                                    <div class="product__card-inner">
+                                        <img class="product__img" src="img/industrial pumps/1.png" alt="">
+                                        <div class="product__descr">
+                                            <div class="popular__name product__name">
+                                                Погружной фекальный насос Zenit SMP 2000/4/250...
+                                            </div>
+                                            <div class="product__price">
+                                                647 858 ₽
+                                            </div>
+                                            <button class="product__btn">
+                                                в корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__card popular__card">
+                                    <div class="product__card-inner">
+                                        <img class="product__img" src="img/industrial pumps/3.png" alt="">
+                                        <div class="product__descr">
+                                            <div class="popular__name product__name">
+                                                Погружной фекальный насос Zenit SBN 4000/4/150...
+                                            </div>
+                                            <div class="product__price">
+                                                1 255 667 ₽
+                                            </div>
+                                            <button class="product__btn">
+                                                в корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="popular__item">
+                            <div class="popular__header">
+                                <div class="section__title section__title--gray-border">
+                                    Бочковые и контейнерные насосы
+                                </div>
+                                <a class="more" href="#">
+                                    Посмотреть все товары
+                                </a>
+                            </div>
+                            <ul class="popular__inner">
+                                <li class="product__card product__card--request popular__card">
+                                    <div class="product__card-inner">
+                                        <img class="product__img" src="img/barrel pumps/1.png" alt="">
+                                        <div class="product__descr">
+                                            <div class="popular__name product__name">
+                                                Бензиновая мотопомпа Koshin SEV-25L (2х такт.)
+                                            </div>
+                                            <div class="product__request">
+                                                по запросу
+                                            </div>
+                                            <button class="product__btn">
+                                                в корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__card product__card--request popular__card">
+                                    <div class="product__card-inner">
+                                        <img class="product__img" src="img/barrel pumps/2.png" alt="">
+                                        <div class="product__descr">
+                                            <div class="popular__name product__name">
+                                                Бензиновая мотопомпа Koshin SEV-25L (2х такт.)
+                                            </div>
+                                            <div class="product__request">
+                                                по запросу
+                                            </div>
+                                            <button class="product__btn">
+                                                в корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__card product__card--request popular__card">
+                                    <div class="product__card-inner">
+                                        <img class="product__img" src="img/barrel pumps/3.png" alt="">
+                                        <div class="product__descr">
+                                            <div class="popular__name product__name">
+                                                Бензиновая мотопомпа Koshin SEV-25L (2х такт.)
+                                            </div>
+                                            <div class="product__request">
+                                                по запросу
+                                            </div>
+                                            <button class="product__btn">
+                                                в корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__card product__card--request product__card--new popular__card">
+                                    <div class="product__card-inner">
+                                        <img class="product__img" src="img/barrel pumps/4.png" alt="">
+                                        <div class="product__descr">
+                                            <div class="popular__name product__name">
+                                                Бензиновая мотопомпа Koshin SEV-25L (2х такт.)
+                                            </div>
+                                            <div class="product__request">
+                                                по запросу
+                                            </div>
+                                            <button class="product__btn">
+                                                в корзину
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="popular__all" href="#">
+                            <span>все товары направления</span>
+                        </a>
+                    </section>
+
+                    <section class="section useful-info">
+                        <h2 class="catalog-page__title">
+                            Полезная информация
+                        </h2>
+                        <div class="useful-info__content">
+                            <p class="useful-info__visible">
+                                <strong>Насосное оборудование</strong> играет важную роль в функционировании предприятий, заводов; систем водоснабжения, водоотведения и отопления зданий или сооружений. Насосы – незаменимые помощники в сельском хозяйстве, строительстве, химической, пищевой промышленности и других областях.
+                            </p>
+                            <div class="hidden-text">
+                                <p>
+                                    У нас представлено насосное оборудование следующих типов:
+                                </p>
+                                <ul class="useful-info__list">
+                                    <li class="useful-info__list-item">
+                                        <strong>Мотопомпы</strong> — насосные установки с двигателем внутреннего сгорания. Служат для перекачки как чистой, так и сильнозагрязненной воды. Используются при пожаротушении.
+                                    </li>
+                                    <li class="useful-info__list-item">
+                                        <strong>Шламовые</strong> — используются для перекачки шлама, а также других жидкостей с высоким содержанием твердых частиц.
+                                    </li>
+                                    <li class="useful-info__list-item">
+                                        <strong>Шестеренные</strong> — перекачивание жидкости (без абразивных материалов) у данный моделей осуществляется посредством вращающихся шестеренок.
+                                    </li>
+                                    <li class="useful-info__list-item">
+                                        <strong>Консольные и повысительные</strong> — предназначены для перекачки чистых жидкостей, не содержащих абразивных примесей, и не агрессивных для материалов из которых изготовлен насос. Используются в системах водоснабжения.
+                                    </li>
+                                    <li class="useful-info__list-item">
+                                        <strong>Циркуляционные насосы</strong> — применяются для систем отопления в жилых либо нежилых помещениях.
+                                    </li>
+                                    <li class="useful-info__list-item">
+                                        <strong>Фекальные</strong> — участвуют в функционировании системы канализации, очистных сооружениях, а также активно применяются в сельском хозяйстве.
+                                    </li>
+                                    <li class="useful-info__list-item">
+                                        <strong>Дренажные</strong> — используются для перекачки воды с незначительными примесями, например, для ливневых или грунтовых стоков.
+                                    </li>
+                                    <li class="useful-info__list-item">
+                                        <strong>Пищевые</strong> — предназначены для перекачки пищевых продуктов различной вязкости и консистенции, используются для таких продуктов как: вино, молоко, соусы, масла и др.
+                                    </li>
+                                    <li class="useful-info__list-item">
+                                        <strong>Химические насосы</strong> — устройства для перекачки взрывоопасных, токсичных и агрессивных жидкостей – кислот, щелочей, растворителей, бензина, спирта и др.
+                                    </li>
+                                    <li class="useful-info__list-item">
+                                        <strong>Дождевальные установки</strong> применяются для систем ирригации и полива в сельском хозяйстве.
+                                    </li>
+                                </ul>
+                                <p>
+                                    Более подробную информацию о товаре или производителе вы можете узнать на сайте <a href="https://rutector.ru">https://rutector.ru</a>, а также у наших консультантов.
+                                </p>
+                                <p>
+                                    <b>Наша компания – поставщик качественной и надёжной продукции, которая получила положительную оценку у потребителя!</b>
+                                </p>
+                                <p>
+                                    <i>* Информацию о бесплатной доставке вы можете получить у нашего консультанта. Предложение действительно не для всех позиций на сайте.</i>
+                                </p>
+                            </div>
+                            <div class="drop">
+                                <svg width="27" height="14" viewBox="0 0 27 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.5167 2L13.2583 12L2 2" stroke="#B2B9C1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> 
+                                <div class="drop-toggle">
+                                    Читать полностью
+                                </div>
+                                <div class="drop-hide">
+                                    Свернуть
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="footer__inner">
+                <div class="footer__item footer__contact">
+                    <div class="footer__item-title">
+                        Контакты
+                    </div>
+                    <address class="footer__address">
+                        109456, г. Москва, <span>1-ый Вешняковский проезд,</span> дом 1, строение 11
+                    </address>
+                    <div class="footer__hours">
+                        09:00 - 18:00 пн-пт
+                    </div>
+                    <a class="footer__phone" href="tel:88001000069">
+                        8 800 100-00-69
+                    </a>
+                    <div class="footer__message">
+                        Напишите нам
+                    </div>
+                    <div class="footer__call">
+                        Обратный звонок
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        Полезные ссылки
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Акции
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Проекты
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Полезная информация (PDF)
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Возврат и обмен
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        Компания
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Стань нашим дилером
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Пресс-центр
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Реквизиты
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Условия конфиденциальности
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        Присоединяйтесь
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Подписаться на рассылку
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Обратная связь
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__social">
+                        Присоединяйтесь к нам в социальных сетях
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/youtube.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/instagram.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/facebook.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/vk.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/odnoclassniki.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/telegram.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="footer__map" href="#">
+                        <span>Карта сайта</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__inner">
+                <div class="footer__bottom-left">
+                    <div class="footer__copyright">
+                        ©1994-2020 «Рутектор» <br>
+                        Все права защищены. При использовании материалов сайта прямая гиперссылка на rutector.ru обязательна
+                    </div>
+                    <div class="footer__logo"><img src="logo/footer-logo.svg" alt=""></div>
+                </div>
+                <ul class="footer__logo-list">
+                    <li class="footer__logo-item">
+                        <a href="#"><img src="logo/visa.svg" alt=""></a>
+                    </li>
+                    <li class="footer__logo-item">
+                        <a href="#"><img src="logo/mastercard.svg" alt=""></a>
+                    </li>
+                    <li class="footer__logo-item">
+                        <a href="#"><img src="logo/mir.svg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+    <!-- <script src="js/jquery.validate.min.js"></script> --> <!-- Валидация форм -->
+    <!-- <script src="js/jquery.maskedinput.min.js"></script> --> <!-- Маска ввода в инпутах -->
+    <script src="js/main.js"></script>
+</body>
+</html>

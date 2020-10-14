@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/normalize.css">
+    <link rel="stylesheet" href="vendors/slick.css">
+    <link rel="stylesheet" href="vendors/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="vendors/jquery.formstyler.css">
+    <link rel="stylesheet" href="vendors/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Rutector</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__city">
+                        Москва
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Сервис
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Клиентам
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Бренды
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Доставка и оплата
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <a class="header__logo-link" href="#">
+                            <img class="header__logo-img" src="logo/logo.svg" alt="">
+                        </a>
+                        <div class="header__logo-descr">
+                            Поставщик промышленного оборудования
+                        </div>
+                    </div>
+                    <div class="header__main-right">
+                        <div class="header__contact-item">
+                            <a class="header__contact-link" href="#">
+                                <img class="header__contact-img" src="icons/phone.svg" alt="">
+                                Обратный звонок
+                            </a>
+                        </div>
+                        <div class="header__contact-item">
+                            <a class="header__contact-link" href="#">
+                                <img class="header__contact-img" src="icons/mail.svg" alt="">
+                                Напишите нам
+                            </a>
+                        </div>
+                        <div class="header__contact-item">
+                            <div class="header__contact-hours">
+                                09:00 - 18:00 пн-пт
+                            </div>
+                            <a class="header__contact-phone" href="tel:88001000069">
+                                8 800 100-00-69
+                            </a>
+                        </div>
+                        <div class="header__basket">
+                            <div class="header__basket-img">
+                                <img src="icons/basket.svg" alt="">
+                                <span class="header__basket-num">0</span>
+                            </div>
+                            <div class="header__basket-info">
+                                Корзина
+                               <span>0 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__inner">
+                    <button class="header__catalog">
+                        <span>Каталог товаров</span>
+                    </button>
+                    <div class="header__search">
+                        <input class="header__search-input" type="search" placeholder="Поиск товаров. Введите название или артикул">
+                        <button class="header__search-btn"></button>
+                    </div>
+                    <a class="header__promotion" href="#"><span>Акции</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs">
+        <div class="container container--big">
+            <ul class="breadcrumbs__list mobile-overflow">
+                <li class="breadcrumbs__list-item">
+                    <a href="main.html">Главная страница</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#">Каталог</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="catalog_1.html">Насосное оборудование</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#">Консольные и повысительные насосы, бустерные станции</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#">Консольномоноблочные насосы</a>
+                </li>
+                <li class="breadcrumbs__list-item breadcrumbs__list-item--active">
+                    <span>Насосный агрегат NMS 80/250A 380/660/50Hz</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section product-page">
+            <div class="container">
+                <div class="product-page__inner">
+                    <div class="product-page__left"></div>
+                    <div class="product-page__card product-page__card--pre-order">
+                        <div class="product-page__card-top">
+                            <div class="product-page__card-numbers">
+                                Артикул: 100535185
+                            </div>
+                            <a class="product-page__card-rate" href="#product-page_tab-4">
+                                <div class="product-page__card-rateyo" data-rateyo-rating="5"></div>
+                            </a>
+                        </div>
+                        <h1 class="product-page__card-title">
+                            Насосный агрегат NMS 80/250A 380/660/50Hz
+                        </h1>
+                        <div class="product-page__card-price">
+                            <img src="icons/product-card/price.png" alt="">
+                            <div class="product-page__card-oldprice">
+                                428 385 ₽
+                            </div>
+                            <div class="product-page__card-request">
+                                по запросу
+                            </div>
+                            306 724 ₽
+                        </div>
+                        <div class="product-page__card-saving">
+                            -10% при оплате онлайн или по счету (экономия 30 672 ₽)
+                        </div>
+                        <ul class="product-page__info-list">
+                            <li class="product-page__info-item">
+                                <div class="product-page__info-itemleft">
+                                    <img src="icons/product-card/availability.svg" alt="" class="product-page__info-icon">
+                                    <div class="product-page__info-text">
+                                        Нет в наличии
+                                    </div>
+                                    <ul class="product-page__balance-dots">
+                                        <li class="product-page__balance-dot"></li>
+                                        <li class="product-page__balance-dot"></li>
+                                        <li class="product-page__balance-dot"></li>
+                                    </ul>
+                                    <a class="product-page__balance-question" href="#"><img src="icons/question.svg" alt=""></a>
+                                </div>
+                            </li>
+                            <li class="product-page__info-item">
+                                <div class="product-page__info-itemleft">
+                                    <!-- <img src="icons/product-card/delivery.svg" alt="" class="product-page__info-icon"> -->
+                                    <div class="product-page__info-delivery">
+                                        <span>Доставка</span>
+                                        <div class="product-page__info-text">
+                                            г. Москва
+                                        </div>
+                                        <img src="logo/delivery-company_logo.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-page__info-itemright">
+                                    <div class="product-page__info-text">
+                                        Доставка до дома
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-page__info-item">
+                                <div class="product-page__info-itemleft">
+                                    <img src="icons/product-card/print.svg" alt="" class="product-page__info-icon">
+                                    <a href="#" class="product-page__info-text">
+                                        Распечатать
+                                    </a>
+                                </div>
+                                <div class="product-page__info-itemright">
+                                    <img src="icons/product-card/socials.png" alt="">
+                                </div>
+                            </li>
+                            <li class="product-page__info-item">
+                                <div class="product-page__info-itemleft">
+                                    <img src="icons/product-card/world.svg" alt="" class="product-page__info-icon">
+                                    <a href="brand-page.html">
+                                        <img src="logo/calpeda.png" alt="" class="product-page__info-logo">
+                                    </a>
+                                </div>
+                                <div class="product-page__info-itemright">
+                                    <ul>
+                                        <li class="product-page__info-text">
+                                            <span>Родина бренда:</span> Италия
+                                        </li>
+                                        <li class="product-page__info-text">
+                                            <span>Страна производства:</span> Италия
+                                        </li class="product-page__info-text">
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section product-card__tabs">
+            <div class="container">
+                <div class="tabs__wrapper">
+                    <a class="tab product-page__tab" href="#product-page_tab-1">
+                        Описание
+                    </a>
+                    <a class="tab product-page__tab tab--active" href="#product-page_tab-2">
+                        Характеристики
+                    </a>
+                    <a class="tab product-page__tab" href="#product-page_tab-3">
+                        Вопросы
+                    </a>
+                    <a class="tab product-page__tab" href="#product-page_tab-4">
+                        Отзывы (1)
+                    </a>
+                    <a class="tab product-page__tab" href="#product-page_tab-5">
+                        Документация (2)
+                    </a>
+                    <a class="tab product-page__tab" href="#product-page_tab-6">
+                        Расходники
+                    </a>
+                </div>
+                <div class="product-page__tabs-inner">
+                    <div id="product-page_tab-1" class="tabs__content">
+                        Content
+                    </div>
+                    <div id="product-page_tab-2" class="tabs__content tabs__content--active">
+                        <ul class="product-features__list">
+                            <li class="product-features__list-item">
+                                <b>Страна производства:</b> Италия
+                            </li>
+                            <li class="product-features__list-item">
+                                <b>Бренд:</b> Calpeda
+                            </li>
+                            <li class="product-features__list-item">
+                                <b>Срок гарантии, мес:</b> 60
+                            </li>
+                            <li class="product-features__list-item">
+                                <b>Производительность, м3/ч:</b> 192
+                            </li>
+                            <li class="product-features__list-item">
+                                <b>Мощность, кВт:</b> 55
+                            </li>
+                            <li class="product-features__list-item">
+                                <b>Обороты, об/мин:</b> 2900
+                            </li>
+                            <li class="product-features__list-item">
+                                <b>Серия:</b> Nms
+                            </li>
+                            <li class="product-features__list-item">
+                                <b>Напор, м:</b> 95
+                            </li>
+                            <li class="product-features__list-item">
+                                <b>Тип насоса:</b> Центробежные 
+                            </li>
+                            <li class="product-features__list-item">
+                                <b>Вес (брутто), кг:</b> 534
+                            </li>
+                            <li class="product-features__list-item">
+                                <b>Направление товара:</b> Насосное
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="product-page_tab-3" class="tabs__content">
+                        <div class="product-page__questions-title">
+                            Задать вопрос о товаре
+                        </div>
+                        <p class="product-page__questions-help">
+                            Если у вас есть вопросы по товару, не стесняйтесь и спрашивайте! Наши специалисты всегда рады помочь.
+                        </p>
+                        <form action="#" class="form">
+                            <div class="product-page__form-inputs">
+                                <input type="text" class="modal-mini__form-input form__input product-page__form-input" placeholder="Ваше имя" required>
+                                <input type="email" class="modal-mini__form-input form__input product-page__form-input" placeholder="Ваш email" required>
+                            </div>
+                            <textarea class="modal-mini__form-input product-page__form-textarea" placeholder="Ваш вопрос" style="resize: none;"></textarea>
+                            <div class="product-page__form-footer">
+                                <button class="product-page__form-btn" type="submit">
+                                    отправить вопрос
+                                </button>
+                                <p class="product-page__form-warning">
+                                    Мы не публикуем отзывы, которые содержат оскорбления, ссылки на сторонние ресурсы или нарушают другие
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="product-page_tab-4" class="tabs__content">
+                        <div class="product-page__review">
+                            <div class="product-page__review-header">
+                                <div class="product-page__review-avatar">
+                                    Н
+                                </div>
+                                <div class="product-page__review-info">
+                                    <div class="product-page__review-infotop">
+                                        <div class="product-page__review-name">
+                                            Наталья
+                                        </div>
+                                        <time class="product-page__review-date">
+                                            11.03.2019 Москва
+                                        </time>
+                                    </div>
+                                    <div class="product-page__review-infobottom">
+                                        <div class="product-page__review-num">
+                                            5
+                                        </div>
+                                        <div class="product-page__review-rate">
+                                            Функциональность
+                                            <div class="product-page__review-rateyo" data-rateyo-rating="5"></div>
+                                        </div>
+                                        <div class="product-page__review-rate">
+                                            Надежность
+                                            <div class="product-page__review-rateyo" data-rateyo-rating="5"></div>
+                                        </div>
+                                        <div class="product-page__review-rate">
+                                            Качество
+                                            <div class="product-page__review-rateyo" data-rateyo-rating="5"></div>
+                                        </div>
+                                        <div class="product-page__review-buttons">
+                                            <button class="product-page__review-btn">
+                                                <div class="product-page__review-btninner">
+                                                    <img src="icons/reviews/finger-up.svg" alt="">
+                                                    <span>1</span>
+                                                </div>
+                                            </button>
+                                            <button class="product-page__review-btn">
+                                                <div class="product-page__review-btninner">
+                                                    <img src="icons/reviews/finger-down.svg" alt="">
+                                                    <span>0</span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-page__review-content">
+                                <ul class="product-page__review-list">
+                                    <li class="product-page__review-listitem">
+                                        <strong>Плюсы</strong>
+                                        Работает
+                                    </li>
+                                    <li class="product-page__review-listitem">
+                                        <strong>Минусы</strong>
+                                        Не обнаружила
+                                    </li>
+                                    <li class="product-page__review-listitem">
+                                        <strong>Отзыв</strong>
+                                        Они хороши тем, что регулировку очень легко сделать. Для этого у них имеется соответствующая шкала.
+                                    </li>
+                                </ul>
+                                <div class="product-page__review-comment">
+                                    <span>Комментировать</span>
+                                </div>
+                                <div class="product-page__review-filter">
+                                    <select class="modal-mini__form-input product-page__review-select">
+                                        <option value="">Показать по 10</option>
+                                    </select>
+                                    <div class="product-page__review-selectdescr">
+                                        Показано 1 из 1 результатов
+                                    </div>
+                                </div>
+                                <div class="product-page__review-new">
+                                    <div class="product-page__review-title">
+                                        Написать отзыв о товаре
+                                    </div>
+                                    <p class="product-page__review-descr">
+                                        Отзыв поможет кому-то сделать выбор. Спасибо, что делитесь опытом!
+                                    </p>
+                                    <p class="product-page__review-descr">
+                                        Добавьте отзыв, заполнив личные данные, или сначала войдите на сайт, тогда информация будет автоматически взята из профиля.
+                                    </p>
+                                    <button class="product-page__enter-btn">
+                                        войти
+                                    </button>
+                                    <p class="product-page__review-descr">
+                                        или
+                                    </p>
+                                    <form class="product-page__review-form" action="#">
+                                        <div class="product-page__form-inputs">
+                                            <input type="text" class="modal-mini__form-input form__input product-page__form-input" placeholder="Укажите ваше имя" required>
+                                            <input type="email" class="modal-mini__form-input form__input product-page__form-input" placeholder="Укажите ваш email" required>
+                                        </div>
+                                        <div class="product-page__review-newinner">
+                                            <div class="product-page__review-newrate">
+                                                Функциональность*
+                                                <div class="product-page__review-newrateyo" data-rateyo-rating="0"></div>
+                                            </div>
+                                            <div class="product-page__review-newrate">
+                                                Надежность*
+                                                <div class="product-page__review-newrateyo" data-rateyo-rating="0"></div>
+                                            </div>
+                                            <div class="product-page__review-newrate">
+                                                Качество*
+                                                <div class="product-page__review-newrateyo" data-rateyo-rating="0"></div>
+                                            </div>
+                                            <div class="product-page__review-checkboxes">
+                                                Рекомендуете?*
+                                                <input name="recommendation" id="yes" class="product-page__review-checkbox" type="radio" checked>
+                                                <label class="product-page__review-label" for="yes">
+                                                    Да
+                                                </label>
+                                                <input name="recommendation" id="no" class="product-page__review-checkbox" type="radio">
+                                                <label class="product-page__review-label" for="no">
+                                                    Нет
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="product-page__review-newitem">
+                                            <label for="pluses">Плюсы</label>
+                                            <textarea name="pluses" id="#pluses" placeholder="Что вам понравилось" required></textarea>
+                                        </div>
+                                        <div class="product-page__review-newitem">
+                                            <label for="minuses">Плюсы</label>
+                                            <textarea name="minuses" id="minuses" placeholder="Что вам не понравилось" required></textarea>
+                                        </div>
+                                        <div class="product-page__review-newitem">
+                                            <label for="review">Плюсы</label>
+                                            <textarea name="review" id="#pluses" placeholder="Ваш отзыв о товаре" required></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="product-page_tab-5" class="tabs__content">
+                        <div class="product-page__documents">
+                            <a class="product-page__document-link" href="https://compressor-pk.ru/catalog/%D0%A0%D0%B5%D0%BB%D0%B5/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%20%D1%8D%D0%BA%D1%81%D0%BF%D0%BB%D1%83%D0%B0%D1%82%D0%B0%D1%86%D0%B8%D0%B8%20MDR-F.pdf" target="_blank">
+                                Руководство по эксплуатации к реле давления CONDOR серии FF4 (ENG).pdf
+                            </a>
+                            <a class="product-page__document-link" href="https://compressor-pk.ru/catalog/%D0%A0%D0%B5%D0%BB%D0%B5/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%20%D1%8D%D0%BA%D1%81%D0%BF%D0%BB%D1%83%D0%B0%D1%82%D0%B0%D1%86%D0%B8%D0%B8%20MDR-F.pdf" target="_blank">
+                                Руководство по эксплуатации к реле давления CONDOR серии FF4 (ENG).pdf
+                            </a>
+                        </div>
+                    </div>
+                    <div id="product-page_tab-6" class="tabs__content">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container container--big">
+                <h2 class="section__title section__title--gray-border">
+                    Запчасти и расходные материалы
+                </h2>
+                <div class="section__inner product-page__section-inner">
+                    <div class="popular-products__slider">
+                        <div class="popular-products__slider-item product-card">
+                            <div class="product-card__box">
+                                <div class="product-card__title">
+                                    Реле давления FF4-4 DAH (MDR-F 4 HAA SAA A 010A030)
+                                </div>
+                                <img class="product-card__img" src="img/product-page/slider_1/1.png" alt="">
+                                <div class="product-card__content">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price-old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product-card__price">
+                                                5 397 ₽
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buttons">
+                                            <button class="count-btn">
+                                                Выставить счет
+                                            </button>
+                                            <button class="basket-btn">
+                                                в корзину
+                                            </button>
+                                            <button class="pre-order__btn">
+                                                предзаказ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <a class="product-card__more-link" href="#">+ Подробнее</a>
+                                        <button class="product-card__postpone-btn">Отложить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-products__slider-item product-card">
+                            <div class="product-card__box">
+                                <div class="product-card__title">
+                                    Реле давления CONDOR FF4 8 DAH (MDR-F 8 HAA SAA A 020A060)
+                                </div>
+                                <img class="product-card__img" src="img/product-page/slider_1/1.png" alt="">
+                                <div class="product-card__content">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price-old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product-card__price">
+                                                5 720 ₽
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buttons">
+                                            <button class="count-btn">
+                                                Выставить счет
+                                            </button>
+                                            <button class="basket-btn">
+                                                в корзину
+                                            </button>
+                                            <button class="pre-order__btn">
+                                                предзаказ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <a class="product-card__more-link" href="#">+ Подробнее</a>
+                                        <button class="product-card__postpone-btn">Отложить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-products__slider-item product-card product-card--request">
+                            <div class="product-card__box">
+                                <div class="product-card__title">
+                                    Реле давления CONDOR MDR_5/5_COA_BAAA_015A030_XX<br> X_XXX
+                                </div>
+                                <img class="product-card__img" src="img/product-page/slider_1/2.png" alt="">
+                                <div class="product-card__content">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price-old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product-card__price">
+                                                376 481 ₽
+                                            </div>
+                                            <div class="product-card__request">
+                                                по запросу
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buttons">
+                                            <button class="count-btn">
+                                                Выставить счет
+                                            </button>
+                                            <button class="basket-btn">
+                                                в корзину
+                                            </button>
+                                            <button class="pre-order__btn">
+                                                предзаказ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <a class="product-card__more-link" href="#">+ Подробнее</a>
+                                        <button class="product-card__postpone-btn">Отложить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-products__slider-item product-card product-card--bestseller">
+                            <div class="product-card-box">
+                                <div class="product-card__title">
+                                    Реле давления CONDOR MDR 21/6 DMD AACZ 015A030 XIH XXB
+                                </div>
+                                <img class="product-card__img" src="img/product-page/slider_1/3.png" alt="">
+                                <div class="product-card__content">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price-old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product-card__price">
+                                                1 692 ₽
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buttons">
+                                            <button class="count-btn">
+                                                Выставить счет
+                                            </button>
+                                            <button class="basket-btn">
+                                                в корзину
+                                            </button>
+                                            <button class="pre-order__btn">
+                                                предзаказ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <a class="product-card__more-link" href="#">+ Подробнее</a>
+                                        <button class="product-card__postpone-btn">Отложить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-products__slider-item product-card">
+                            <div class="product-card__box">
+                                <div class="product-card__title">
+                                    Реле давления FF4-4 DAH (MDR-F 4 HAA SAA A 010A030)
+                                </div>
+                                <img class="product-card__img" src="img/product-page/slider_1/1.png" alt="">
+                                <div class="product-card__content">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price-old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product-card__price">
+                                                5 397 ₽
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buttons">
+                                            <button class="count-btn">
+                                                Выставить счет
+                                            </button>
+                                            <button class="basket-btn">
+                                                в корзину
+                                            </button>
+                                            <button class="pre-order__btn">
+                                                предзаказ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <a class="product-card__more-link" href="#">+ Подробнее</a>
+                                        <button class="product-card__postpone-btn">Отложить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-products__slider-item product-card">
+                            <div class="product-card__box">
+                                <div class="product-card__title">
+                                    Реле давления CONDOR FF4 8 DAH (MDR-F 8 HAA SAA A 020A060)
+                                </div>
+                                <img class="product-card__img" src="img/product-page/slider_1/1.png" alt="">
+                                <div class="product-card__content">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price-old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product-card__price">
+                                                5 720 ₽
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buttons">
+                                            <button class="count-btn">
+                                                Выставить счет
+                                            </button>
+                                            <button class="basket-btn">
+                                                в корзину
+                                            </button>
+                                            <button class="pre-order__btn">
+                                                предзаказ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <a class="product-card__more-link" href="#">+ Подробнее</a>
+                                        <button class="product-card__postpone-btn">Отложить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-products__slider-item product-card product-card--request">
+                            <div class="product-card__box">
+                                <div class="product-card__title">
+                                    Реле давления CONDOR MDR_5/5_COA_BAAA_015A030_XX<br> X_XXX
+                                </div>
+                                <img class="product-card__img" src="img/product-page/slider_1/2.png" alt="">
+                                <div class="product-card__content">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price-old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product-card__price">
+                                                376 481 ₽
+                                            </div>
+                                            <div class="product-card__request">
+                                                по запросу
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buttons">
+                                            <button class="count-btn">
+                                                Выставить счет
+                                            </button>
+                                            <button class="basket-btn">
+                                                в корзину
+                                            </button>
+                                            <button class="pre-order__btn">
+                                                предзаказ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <a class="product-card__more-link" href="#">+ Подробнее</a>
+                                        <button class="product-card__postpone-btn">Отложить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-products__slider-item product-card product-card--bestseller">
+                            <div class="product-card-box">
+                                <div class="product-card__title">
+                                    Реле давления CONDOR MDR 21/6 DMD AACZ 015A030 XIH XXB
+                                </div>
+                                <img class="product-card__img" src="img/product-page/slider_1/3.png" alt="">
+                                <div class="product-card__content">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price-old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product-card__price">
+                                                1 692 ₽
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buttons">
+                                            <button class="count-btn">
+                                                Выставить счет
+                                            </button>
+                                            <button class="basket-btn">
+                                                в корзину
+                                            </button>
+                                            <button class="pre-order__btn">
+                                                предзаказ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <a class="product-card__more-link" href="#">+ Подробнее</a>
+                                        <button class="product-card__postpone-btn">Отложить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container container--big">
+                <h2 class="section__title section__title--gray-border">
+                    С этим товаром покупают
+                </h2>
+                <div class="section__inner product-page__section-inner">
+                    <div class="popular-products__slider">
+                        <div class="popular-products__slider-item product-card product-card--bestseller">
+                            <div class="product-card__box">
+                                <div class="product-card__title">
+                                    Циркуляционный насос с мокрым ротором Calpeda NC3 15-40/130 V.230/50
+                                </div>
+                                <img class="product-card__img" src="img/product-page/slider_2/1.png" alt="">
+                                <div class="product-card__content">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price-old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product-card__price">
+                                                7 442 ₽
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buttons">
+                                            <button class="count-btn">
+                                                Выставить счет
+                                            </button>
+                                            <button class="basket-btn">
+                                                в корзину
+                                            </button>
+                                            <button class="pre-order__btn">
+                                                предзаказ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <a class="product-card__more-link" href="#">+ Подробнее</a>
+                                        <button class="product-card__postpone-btn">Отложить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-products__slider-item product-card">
+                            <div class="product-card__box">
+                                <div class="product-card__title">
+                                    Станция управления M Comp-9
+                                </div>
+                                <img class="product-card__img" src="img/product-page/slider_2/2.png" alt="">
+                                <div class="product-card__content">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price-old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product-card__price">
+                                                3 660 ₽
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buttons">
+                                            <button class="count-btn">
+                                                Выставить счет
+                                            </button>
+                                            <button class="basket-btn">
+                                                в корзину
+                                            </button>
+                                            <button class="pre-order__btn">
+                                                предзаказ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <a class="product-card__more-link" href="#">+ Подробнее</a>
+                                        <button class="product-card__postpone-btn">Отложить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-products__slider-item product-card product-card--request">
+                            <div class="product-card__box">
+                                <div class="product-card__title">
+                                    Емкость GEO 230 л
+                                </div>
+                                <img class="product-card__img" src="img/product-page/slider_2/3.png" alt="">
+                                <div class="product-card__content">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price-old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product-card__price">
+                                                20 385 ₽
+                                            </div>
+                                            <div class="product-card__request">
+                                                по запросу
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buttons">
+                                            <button class="count-btn">
+                                                Выставить счет
+                                            </button>
+                                            <button class="basket-btn">
+                                                в корзину
+                                            </button>
+                                            <button class="pre-order__btn">
+                                                предзаказ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <a class="product-card__more-link" href="#">+ Подробнее</a>
+                                        <button class="product-card__postpone-btn">Отложить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-products__slider-item product-card product-card--bestseller">
+                            <div class="product-card-box">
+                                <div class="product-card__title">
+                                    Угловой патрубок UG-DN65
+                                </div>
+                                <img class="product-card__img" src="img/product-page/slider_2/4.png" alt="">
+                                <div class="product-card__content">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price-old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product-card__price">
+                                                9 733 ₽
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buttons">
+                                            <button class="count-btn">
+                                                Выставить счет
+                                            </button>
+                                            <button class="basket-btn">
+                                                в корзину
+                                            </button>
+                                            <button class="pre-order__btn">
+                                                предзаказ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <a class="product-card__more-link" href="#">+ Подробнее</a>
+                                        <button class="product-card__postpone-btn">Отложить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-products__slider-item product-card">
+                            <div class="product-card__box">
+                                <div class="product-card__title">
+                                    Реле давления FF4-4 DAH (MDR-F 4 HAA SAA A 010A030)
+                                </div>
+                                <img class="product-card__img" src="img/product-page/slider_1/1.png" alt="">
+                                <div class="product-card__content">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price-old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product-card__price">
+                                                5 397 ₽
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buttons">
+                                            <button class="count-btn">
+                                                Выставить счет
+                                            </button>
+                                            <button class="basket-btn">
+                                                в корзину
+                                            </button>
+                                            <button class="pre-order__btn">
+                                                предзаказ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <a class="product-card__more-link" href="#">+ Подробнее</a>
+                                        <button class="product-card__postpone-btn">Отложить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-products__slider-item product-card">
+                            <div class="product-card__box">
+                                <div class="product-card__title">
+                                    Реле давления CONDOR FF4 8 DAH (MDR-F 8 HAA SAA A 020A060)
+                                </div>
+                                <img class="product-card__img" src="img/product-page/slider_1/1.png" alt="">
+                                <div class="product-card__content">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price-old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product-card__price">
+                                                5 720 ₽
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buttons">
+                                            <button class="count-btn">
+                                                Выставить счет
+                                            </button>
+                                            <button class="basket-btn">
+                                                в корзину
+                                            </button>
+                                            <button class="pre-order__btn">
+                                                предзаказ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <a class="product-card__more-link" href="#">+ Подробнее</a>
+                                        <button class="product-card__postpone-btn">Отложить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-products__slider-item product-card product-card--request">
+                            <div class="product-card__box">
+                                <div class="product-card__title">
+                                    Реле давления CONDOR MDR_5/5_COA_BAAA_015A030_XX<br> X_XXX
+                                </div>
+                                <img class="product-card__img" src="img/product-page/slider_1/2.png" alt="">
+                                <div class="product-card__content">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price-old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product-card__price">
+                                                376 481 ₽
+                                            </div>
+                                            <div class="product-card__request">
+                                                по запросу
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buttons">
+                                            <button class="count-btn">
+                                                Выставить счет
+                                            </button>
+                                            <button class="basket-btn">
+                                                в корзину
+                                            </button>
+                                            <button class="pre-order__btn">
+                                                предзаказ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <a class="product-card__more-link" href="#">+ Подробнее</a>
+                                        <button class="product-card__postpone-btn">Отложить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-products__slider-item product-card product-card--bestseller">
+                            <div class="product-card-box">
+                                <div class="product-card__title">
+                                    Реле давления CONDOR MDR 21/6 DMD AACZ 015A030 XIH XXB
+                                </div>
+                                <img class="product-card__img" src="img/product-page/slider_1/3.png" alt="">
+                                <div class="product-card__content">
+                                    <div class="product-card__inner">
+                                        <div class="product-card__prices">
+                                            <div class="product-card__price-old">
+                                                130 527 ₽
+                                            </div>
+                                            <div class="product-card__price">
+                                                1 692 ₽
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buttons">
+                                            <button class="count-btn">
+                                                Выставить счет
+                                            </button>
+                                            <button class="basket-btn">
+                                                в корзину
+                                            </button>
+                                            <button class="pre-order__btn">
+                                                предзаказ
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__footer">
+                                        <a class="product-card__more-link" href="#">+ Подробнее</a>
+                                        <button class="product-card__postpone-btn">Отложить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="footer__inner">
+                <div class="footer__item footer__contact">
+                    <div class="footer__item-title">
+                        Контакты
+                    </div>
+                    <address class="footer__address">
+                        109456, г. Москва, <span>1-ый Вешняковский проезд,</span> дом 1, строение 11
+                    </address>
+                    <div class="footer__hours">
+                        09:00 - 18:00 пн-пт
+                    </div>
+                    <a class="footer__phone" href="tel:88001000069">
+                        8 800 100-00-69
+                    </a>
+                    <div class="footer__message">
+                        Напишите нам
+                    </div>
+                    <div class="footer__call">
+                        Обратный звонок
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        Полезные ссылки
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Акции
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Проекты
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Полезная информация (PDF)
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Возврат и обмен
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        Компания
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Стань нашим дилером
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Пресс-центр
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Реквизиты
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Условия конфиденциальности
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        Присоединяйтесь
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Подписаться на рассылку
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Обратная связь
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__social">
+                        Присоединяйтесь к нам в социальных сетях
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/youtube.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/instagram.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/facebook.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/vk.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/odnoclassniki.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/telegram.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="footer__map" href="#">
+                        <span>Карта сайта</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__inner">
+                <div class="footer__bottom-left">
+                    <div class="footer__copyright">
+                        ©1994-2020 «Рутектор» <br>
+                        Все права защищены. При использовании материалов сайта прямая гиперссылка на rutector.ru обязательна
+                    </div>
+                    <div class="footer__logo"><img src="logo/footer-logo.svg" alt=""></div>
+                </div>
+                <ul class="footer__logo-list">
+                    <li class="footer__logo-item">
+                        <a href="#"><img src="logo/visa.svg" alt=""></a>
+                    </li>
+                    <li class="footer__logo-item">
+                        <a href="#"><img src="logo/mastercard.svg" alt=""></a>
+                    </li>
+                    <li class="footer__logo-item">
+                        <a href="#"><img src="logo/mir.svg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay">
+        <div id="bill" class="modal modal-bill">
+            <img class="modal__close" src="icons/modal-close.svg" alt="">
+            <div class="modal-bill__inner">
+                <div class="modal-bill__title">
+                    Выставить счет
+                </div>
+                <form action="#" class="modal__form">
+                    <div class="modal-bill__form-top">
+                        <div class="modal__form-title modal-bill__form-title">
+                            Получатель заказа
+                        </div>
+                        <div class="modal-bill__form-inputs">
+                            <input name="name" type="text" class="modal__form-input modal-bill__form-input" placeholder="Имя и фамилия*" required>
+                            <input name="email" type="email" class="modal__form-input modal-bill__form-input" placeholder="Электронная почта*" required>
+                            <input name="phone" type="tel" class="modal__form-input modal-bill__form-input" placeholder="+7(_ _ _) _ _ _-_ _-_ _*" required>
+                        </div>
+                    </div>
+                    <div class="modal__form-title modal-bill__form-title">
+                        Реквизиты юридического лица
+                    </div>
+                    <p class="form__descr modal-bill__form-descr">
+                        Указываются строго в соответствии с учредительными документами организации, которая является плательщиком и получателем заказа
+                    </p>
+                    <div class="modal-bill__form-inputs">
+                        <input type="text" class="modal__form-input modal-bill__form-input" placeholder="ИНН*" required>
+                        <input type="text" class="modal__form-input modal-bill__form-input"
+                        placeholder="Наименование организации*" required>
+                        <input type="text" class="modal__form-input modal-bill__form-input" placeholder="ОГРН (если несколько)">
+                        <input type="text" class="modal__form-input modal-bill__form-input" placeholder="КПП*" required>
+                        <input type="text" class="modal__form-input modal-bill__form-input" placeholder="Расчетный счет*" required>
+                        <input type="text" class="modal__form-input modal-bill__form-input" placeholder="Юридический адрес*" required>
+                        <input type="text" class="modal__form-input modal-bill__form-input" placeholder="Бик*" required>
+                        <input type="text" class="modal__form-input modal-bill__form-input" placeholder="Наименование банка*" required>
+                        <input type="text" class="modal__form-input modal-bill__form-input" placeholder="Корреспондентский счет*" required>
+                        <input type="text" class="modal__form-input modal-bill__form-input" placeholder="Город банка*" required>
+                        <input type="text" class="modal__form-input modal-bill__form-input" placeholder="Код ОКПО">
+                        <input type="text" class="modal__form-input modal-bill__form-input" placeholder="Физический адрес*" required>
+                    </div>
+                    <div class="modal__form-buttons">
+                        <button class="modal__form-btn" type="submit">Отправить</button>
+                        <button class="modal__form-btn modal__form-btn--continue-buying">
+                            продолжить покупки
+                        </button>
+                    </div>
+                    <p class="modal__form-politics">
+                        Нажимая кнопку «Отправить», я принимаю условия <a href="#">Договора-оферты</a> и даю своё согласие магазину «ET.ru» на обработку моих персональных данных, в соответствии с Федеральном законом от 27.07.2006 года № 152-Ф3 «О персональных данных», на условиях и для цели определенных в <a href="#">Соглашении</a>.
+                    </p>
+                </form>
+            </div>
+        </div>
+        <div id="one-click-buy" class="modal modal-mini">
+            <div class="modal__title">
+                Купить в один клик
+            </div>
+            <form action="#">
+                <input class="modal__form-input modal-mini__form-input" type="text" placeholder=" Ваше имя" required>
+                <input type="tel" class="modal__form-input modal-mini__form-input" placeholder="+7(___) ___-__-__" required>
+                <div class="modal__form-buttons">
+                    <button class="modal__form-btn" type="submit">Отправить</button>
+                    <button class="modal__form-btn modal__form-btn--continue-buying">
+                        продолжить покупки
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div id="price" class="modal modal-mini">
+            <div class="modal__title">
+                Узнать цену
+            </div>
+            <form action="#">
+                <input class="modal__form-input modal-mini__form-input" type="text" placeholder=" Ваше имя" required>
+                <input type="tel" class="modal__form-input modal-mini__form-input" placeholder="+7(___) ___-__-__" required>
+                <div class="modal__form-buttons">
+                    <button class="modal__form-btn" type="submit">Отправить</button>
+                    <button class="modal__form-btn modal__form-btn--continue-buying">
+                        продолжить покупки
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div id="pre-order" class="modal modal-mini">
+            <div class="modal__title">
+                Предзаказ
+            </div>
+            <form action="#">
+                <input class="modal__form-input modal-mini__form-input" type="text" placeholder=" Ваше имя" required>
+                <input type="tel" class="modal__form-input modal-mini__form-input" placeholder="+7(___) ___-__-__" required>
+                <div class="modal__form-buttons">
+                    <button class="modal__form-btn" type="submit">Отправить</button>
+                    <button class="modal__form-btn modal__form-btn--continue-buying">
+                        продолжить покупки
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div id="get-offer" class="modal modal-mini">
+            <div class="modal__title">
+                Получить коммерческое предложение
+            </div>
+            <form action="#">
+                <input class="modal__form-input modal-mini__form-input" type="text" placeholder=" Ваше имя" required>
+                <input type="tel" class="modal__form-input modal-mini__form-input" placeholder="+7(___) ___-__-__" required>
+                <div class="form__buttons">
+                    <button class="form__btn" type="submit">Отправить</button>
+                    <button class="form__btn form__btn--continue-buying">
+                        продолжить покупки
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+    <!-- <script src="js/jquery.validate.min.js"></script> -->
+    <!-- <script src="js/jquery.maskedinput.min.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+</html>

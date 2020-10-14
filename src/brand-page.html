@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/normalize.css">
+    <link rel="stylesheet" href="vendors/slick.css">
+    <link rel="stylesheet" href="vendors/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="vendors/jquery.formstyler.css">
+    <link rel="stylesheet" href="vendors/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Rutector</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__city">
+                        Москва
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Сервис
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Клиентам
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Бренды
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Доставка и оплата
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <a class="header__logo-link" href="#">
+                            <img class="header__logo-img" src="logo/logo.svg" alt="">
+                        </a>
+                        <div class="header__logo-descr">
+                            Поставщик промышленного оборудования
+                        </div>
+                    </div>
+                    <div class="header__main-right">
+                        <div class="header__contact-item">
+                            <a class="header__contact-link" href="#">
+                                <img class="header__contact-img" src="icons/phone.svg" alt="">
+                                Обратный звонок
+                            </a>
+                        </div>
+                        <div class="header__contact-item">
+                            <a class="header__contact-link" href="#">
+                                <img class="header__contact-img" src="icons/mail.svg" alt="">
+                                Напишите нам
+                            </a>
+                        </div>
+                        <div class="header__contact-item">
+                            <div class="header__contact-hours">
+                                09:00 - 18:00 пн-пт
+                            </div>
+                            <a class="header__contact-phone" href="tel:88001000069">
+                                8 800 100-00-69
+                            </a>
+                        </div>
+                        <div class="header__basket">
+                            <div class="header__basket-img">
+                                <img src="icons/basket.svg" alt="">
+                                <span class="header__basket-num">0</span>
+                            </div>
+                            <div class="header__basket-info">
+                                Корзина
+                               <span>0 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__inner">
+                    <button class="header__catalog">
+                        <span>Каталог товаров</span>
+                    </button>
+                    <div class="header__search">
+                        <input class="header__search-input" type="search" placeholder="Поиск товаров. Введите название или артикул">
+                        <button class="header__search-btn"></button>
+                    </div>
+                    <a class="header__promotion" href="#"><span>Акции</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs">
+        <div class="container container--big">
+            <ul class="breadcrumbs__list mobile-overflow">
+                <li class="breadcrumbs__list-item">
+                    <a href="index.html">Главная страница</a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                    <a href="#">Производители</a>
+                </li>
+                <li class="breadcrumbs__list-item breadcrumbs__list-item--active">
+                    <span>Calpeda</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section brand-info">
+        <div class="container container--big">
+            <h1 class="brand-page__title">
+                Calpeda
+            </h1>
+            <div class="brand-info__inner">
+                <div class="brand-info__descr">
+                    <img class="brand__logo" src="logo/calpeda.png" alt="">
+                    <ul class="brand-info__list">
+                        <li>
+                            Производство: Италия
+                        </li>
+                        <li>
+                            Сайт: <a href="https://calpeda.ru/">www.calpedapump.ru</a>
+                        </li>
+                    </ul>
+                </div>
+                <img class="brand__img" src="img/calpeda.jpg" alt=""></img>
+            </div>
+            <p>
+                Предприятие Calpeda S.p.A основано в Италии, в 1959 году. Производство расположено в г. Монторсо, Виченция, Италия и занимает площадь в 30 000 кв.м, а количество производимых насосов составляет более 2000 модификаций.
+            </p>
+            <p>
+                Завод Calpeda является частью промышленной группы, в состав которой также входят: литейное производство, предприятие по производству скважинных насосов, компания в сфере разработки дизайна и производства гидромассажных ванн, компания в сфере IT технологий.
+            </p>
+            <p>
+                Calpeda является международной компанией, она имеет ряд дочерних филиалов и компаний в Европе, в азиатских странах, также имеет обширную сеть дистрибьюторов по всему миру, предлагая полный спектр услуг и технологичных решений в области подачи, отведения и циркуляции воды.
+            </p>
+            <div class="brand-info__inner">
+                <div class="brand-info__benefits">
+                    <h2 class="brand-info__benefits-title">
+                        Преимущества
+                    </h2>
+                    <ul class="brand-info__benefits-list">
+                        <li>
+                            Полностью итальянское производство. «Totally MADE IN ITALY»
+                        </li>
+                        <li>
+                            Собственное производство основных компонентов для уменьшения сроков изготовления и полного контроля качества важных узлов и деталей
+                        </li>
+                        <li>
+                            Осуществляется контроль сырья на всех участках производства
+                        </li>
+                        <li>
+                            На заводе применяются современные роботизированные линии для соответствия самым строгим европейским стандартам качества
+                        </li>
+                        <li>
+                            Каждый насос проходит проверку и тестирование на заводе перед отгрузкой клиенту
+                        </li>
+                        <li>
+                            Гарантия на промышленные насосы – 3 года
+                        </li>
+                        <li>
+                            Сотрудники собственной исследовательской лаборатории Calpeda на постоянной основе сотрудничают с ведущими инженерными институтами Европы
+                        </li>
+                        <li>
+                            Продукция поставляется на рынок РФ с 1996 года
+                        </li>
+                        <li>
+                            Более 12 000 предприятий России используют насосное оборудование Calpeda
+                        </li>
+                        <li>
+                            Calpeda: «Мы производим только то, что получается у нас превосходно»
+                        </li>
+                    </ul>
+                </div>
+                <div class="brand-info__benefits-images">
+                    <img src="img/calpeda-benefits/1.jpg" alt="">
+                    <img src="img/calpeda-benefits/2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container container--big">
+            <iframe width="1320" height="740" src="https://www.youtube.com/embed/UPZgeGuMvuY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container container--big">
+            <div class="brand-page__slider">
+                <a class="brand-page__slider-item" href="#">
+                    <img src="img/brand-page_slider/1.png" alt="">
+                    Колодезные погружные насосы
+                </a>
+                <a class="brand-page__slider-item" href="#">
+                    <img src="img/brand-page_slider/2.png" alt="">
+                    Консольно моноблочные насосы
+                </a>
+                <a class="brand-page__slider-item" href="#">
+                    <img src="img/brand-page_slider/3.png" alt="">
+                    Аксессуары для насосов водоснабжения
+                </a>
+                <a class="brand-page__slider-item" href="#">
+                    <img src="img/brand-page_slider/4.png" alt="">
+                    Автоматические насосные установки
+                </a>
+                <a class="brand-page__slider-item" href="#">
+                    <img src="img/brand-page_slider/5.png" alt="">
+                    Вихревые насосы
+                </a>
+                <a class="brand-page__slider-item" href="#">
+                    <img src="img/brand-page_slider/1.png" alt="">
+                    Колодезные погружные насосы
+                </a>
+                <a class="brand-page__slider-item" href="#">
+                    <img src="img/brand-page_slider/2.png" alt="">
+                    Консольно моноблочные насосы
+                </a>
+                <a class="brand-page__slider-item" href="#">
+                    <img src="img/brand-page_slider/3.png" alt="">
+                    Аксессуары для насосов водоснабжения
+                </a>
+                <a class="brand-page__slider-item" href="#">
+                    <img src="img/brand-page_slider/4.png" alt="">
+                    Автоматические насосные установки
+                </a>
+                <a class="brand-page__slider-item" href="#">
+                    <img src="img/brand-page_slider/5.png" alt="">
+                    Вихревые насосы
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section brand-page__products">
+        <div class="container container--big">
+            <h2 class="brand-page__products-title">
+                Популярные товары
+            </h2>
+            <div class="brand-page__products-slider popular-products__slider">
+                <div class="popular-products__slider-item product-card product-card--bestseller product-card--discount">
+                    <div class="product-card__box">
+                        <div class="product-card__title">
+                            Насосный агрегат MXH_202_220V <br> MXHM 202E
+                        </div>
+                        <img class="product-card__img" src="img/brand-page_popular/1.png" alt="">
+                        <div class="product-card__content">
+                            <div class="product-card__inner">
+                                <div class="product-card__prices">
+                                    <div class="product-card__price--old">
+                                        130 527 ₽
+                                    </div>
+                                    <div class="product-card__price">
+                                        43 168 ₽
+                                    </div>
+                                </div>
+                                <div class="product-card__buttons">
+                                    <button class="count-btn">
+                                        Выставить счет
+                                    </button>
+                                    <button class="basket-btn">
+                                        в корзину
+                                    </button>
+                                    <button class="pre-order__btn">
+                                        предзаказ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#">+ Подробнее</a>
+                                <button>Отложить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-products__slider-item product-card product-card--bestseller">
+                    <div class="product-card__box">
+                        <div class="product-card__title">
+                            Вертикальный многоступенчатый насосный агрегат MXV 32-408
+                        </div>
+                        <img class="product-card__img" src="img/brand-page_popular/2.png" alt="">
+                        <div class="product-card__content">
+                            <div class="product-card__inner">
+                                <div class="product-card__price">
+                                    <div class="product-card__price--old">
+                                        130 527 ₽
+                                    </div>
+                                    <div class="product-card__price">
+                                        76 279 ₽
+                                    </div>
+                                </div>
+                                <div class="product-card__buttons">
+                                    <button class="count-btn">
+                                        Выставить счет
+                                    </button>
+                                    <button class="basket-btn">
+                                        в корзину
+                                    </button>
+                                    <button class="pre-order__btn">
+                                        предзаказ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#">+ Подробнее</a>
+                                <button>Отложить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-products__slider-item product-card product-card--bestseller product-card--pre-order">
+                    <div class="product-card__box">
+                        <div class="product-card__title">
+                            Насосный агрегат MXH_202_220V <br> MXHM 202E
+                        </div>
+                        <img class="product-card__img" src="img/brand-page_popular/3.png" alt="">
+                        <div class="product-card__content">
+                            <div class="product-card__inner">
+                                <div class="product-card__price">
+                                    <div class="product-card__price--old">
+                                        130 527 ₽
+                                    </div>
+                                    <div class="product-card__price">
+                                        376 481 ₽
+                                    </div>
+                                </div>
+                                <div class="product-card__buttons">
+                                    <button class="count-btn">
+                                        Выставить счет
+                                    </button>
+                                    <button class="basket-btn">
+                                        в корзину
+                                    </button>
+                                    <button class="pre-order__btn">
+                                        предзаказ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#">+ Подробнее</a>
+                                <button>Отложить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-products__slider-item product-card product-card--bestseller">
+                    <div class="product-card-box">
+                        <div class="product-card__title">
+                            Насосный агрегат моноблочный фланцевый NM 32/12S <br> 230/400/50Hz
+                        </div>
+                        <img class="product-card__img" src="img/brand-page_popular/4.png" alt="">
+                        <div class="product-card__content">
+                            <div class="product-card__inner">
+                                <div class="product-card__prices">
+                                    <div class="product-card__price--old">
+                                        130 527 ₽
+                                    </div>
+                                    <div class="product-card__price">
+                                        38 063 ₽
+                                    </div>
+                                </div>
+                                <div class="product-card__buttons">
+                                    <button class="count-btn">
+                                        Выставить счет
+                                    </button>
+                                    <button class="basket-btn">
+                                        в корзину
+                                    </button>
+                                    <button class="pre-order__btn">
+                                        предзаказ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#">+ Подробнее</a>
+                                <button>Отложить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-products__slider-item product-card product-card--bestseller product-card--discount">
+                    <div class="product-card__box">
+                        <div class="product-card__title">
+                            Насосный агрегат MXH_202_220V <br> MXHM 202E
+                        </div>
+                        <img class="product-card__img" src="img/brand-page_popular/1.png" alt="">
+                        <div class="product-card__content">
+                            <div class="product-card__inner">
+                                <div class="product-card__prices">
+                                    <div class="product-card__price--old">
+                                        130 527 ₽
+                                    </div>
+                                    <div class="product-card-price product-card-price">
+                                        43 168 ₽
+                                    </div>
+                                </div>
+                                <div class="product-card__buttons">
+                                    <button class="count-btn">
+                                        Выставить счет
+                                    </button>
+                                    <button class="basket-btn">
+                                        в корзину
+                                    </button>
+                                    <button class="pre-order__btn">
+                                        предзаказ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#">+ Подробнее</a>
+                                <button>Отложить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-products__slider-item product-card product-card--bestseller">
+                    <div class="product-card__box">
+                        <div class="product-card__title">
+                            Вертикальный многоступенчатый насосный агрегат MXV 32-408
+                        </div>
+                        <img class="product-card__img" src="img/brand-page_popular/2.png" alt="">
+                        <div class="product-card__content">
+                            <div class="product-card__inner">
+                                <div class="product-card__price">
+                                    <div class="product-card__price--old">
+                                        130 527 ₽
+                                    </div>
+                                    <div class="product-card__price">
+                                        76 279 ₽
+                                    </div>
+                                </div>
+                                <div class="product-card__buttons">
+                                    <button class="count-btn">
+                                        Выставить счет
+                                    </button>
+                                    <button class="basket-btn">
+                                        в корзину
+                                    </button>
+                                    <button class="pre-order__btn">
+                                        предзаказ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#">+ Подробнее</a>
+                                <button>Отложить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-products__slider-item product-card product-card--bestseller product-card--pre-order">
+                    <div class="product-card__box">
+                        <div class="product-card__title">
+                            Насосный агрегат MXH_202_220V <br> MXHM 202E
+                        </div>
+                        <img class="product-card__img" src="img/brand-page_popular/3.png" alt="">
+                        <div class="product-card__content">
+                            <div class="product-card__inner">
+                                <div class="product-card__price">
+                                    <div class="product-card__price--old">
+                                        130 527 ₽
+                                    </div>
+                                    <div class="product-card__price">
+                                        376 481 ₽
+                                    </div>
+                                </div>
+                                <div class="product-card__buttons">
+                                    <button class="count-btn">
+                                        Выставить счет
+                                    </button>
+                                    <button class="basket-btn">
+                                        в корзину
+                                    </button>
+                                    <button class="pre-order__btn">
+                                        предзаказ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#">+ Подробнее</a>
+                                <button>Отложить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-products__slider-item product-card product-card--bestseller">
+                    <div class="product-card__box">
+                        <div class="product-card__title">
+                            Насосный агрегат моноблочный фланцевый NM 32/12S <br> 230/400/50Hz
+                        </div>
+                        <img class="product-card__img" src="img/brand-page_popular/4.png" alt="">
+                        <div class="product-card__content">
+                            <div class="product-card__inner">
+                                <div class="product-card__price">
+                                    <div class="product-card__price--old">
+                                        130 527 ₽
+                                    </div>
+                                    <div class="product-card__price">
+                                        38 063 ₽
+                                    </div>
+                                </div>
+                                <div class="product-card__buttons">
+                                    <button class="count-btn">
+                                        Выставить счет
+                                    </button>
+                                    <button class="basket-btn">
+                                        в корзину
+                                    </button>
+                                    <button class="pre-order__btn">
+                                        предзаказ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-card__footer">
+                                <a href="#">+ Подробнее</a>
+                                <button>Отложить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container container--big">
+            <p>
+                В основе философии Calpeda лежат высокое качество выпускаемой продукции и инновационные решения. На производстве максимально используются роботизированные линии по изготовлению комплектующих и сборки
+            </p>
+            <div class="hidden-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ad, optio qui autem laborum nesciunt repudiandae ex ab fugiat? Quibusdam sunt fuga magni perferendis modi explicabo libero molestiae quod debitis!</p>
+                <p>Accusamus, neque praesentium. Nam modi eligendi ullam delectus esse unde obcaecati architecto, dolorum error explicabo nihil odit tenetur dicta libero accusantium. Quas at ea repellendus rerum voluptas maxime magnam explicabo!</p>
+                <p>Vel ipsa necessitatibus earum voluptates neque, debitis hic laudantium odio animi. Recusandae illo molestias quas voluptate nam atque? Voluptatibus impedit at quo itaque eum ut amet hic nisi quia dolorum?</p>
+            </div>
+            <div class="drop">
+                <svg width="27" height="14" viewBox="0 0 27 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24.5167 2L13.2583 12L2 2" stroke="#B2B9C1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+                <div class="drop-toggle">
+                    Читать полностью
+                </div>
+                <div class="drop-hide">
+                    Свернуть
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="footer__inner">
+                <div class="footer__item footer__contact">
+                    <div class="footer__item-title">
+                        Контакты
+                    </div>
+                    <address class="footer__address">
+                        109456, г. Москва, <span>1-ый Вешняковский проезд,</span> дом 1, строение 11
+                    </address>
+                    <div class="footer__hours">
+                        09:00 - 18:00 пн-пт
+                    </div>
+                    <a class="footer__phone" href="tel:88001000069">
+                        8 800 100-00-69
+                    </a>
+                    <div class="footer__message">
+                        Напишите нам
+                    </div>
+                    <div class="footer__call">
+                        Обратный звонок
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        Полезные ссылки
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Акции
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Проекты
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Полезная информация (PDF)
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Возврат и обмен
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        Компания
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Стань нашим дилером
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Пресс-центр
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Реквизиты
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Условия конфиденциальности
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        Присоединяйтесь
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Подписаться на рассылку
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Обратная связь
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__social">
+                        Присоединяйтесь к нам в социальных сетях
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/youtube.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/instagram.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/facebook.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/vk.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/odnoclassniki.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/telegram.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="footer__map" href="#">
+                        <span>Карта сайта</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__inner">
+                <div class="footer__bottom-left">
+                    <div class="footer__copyright">
+                        ©1994-2020 «Рутектор» <br>
+                        Все права защищены. При использовании материалов сайта прямая гиперссылка на rutector.ru обязательна
+                    </div>
+                    <div class="footer__logo"><img src="logo/footer-logo.svg" alt=""></div>
+                </div>
+                <ul class="footer__logo-list">
+                    <li class="footer__logo-item">
+                        <a href="#"><img src="logo/visa.svg" alt=""></a>
+                    </li>
+                    <li class="footer__logo-item">
+                        <a href="#"><img src="logo/mastercard.svg" alt=""></a>
+                    </li>
+                    <li class="footer__logo-item">
+                        <a href="#"><img src="logo/mir.svg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+    <!-- <script src="js/jquery.validate.min.js"></script> --> <!-- Валидация форм -->
+    <!-- <script src="js/jquery.maskedinput.min.js"></script> --> <!-- Маска ввода в инпутах -->
+    <script src="js/main.js"></script>
+</body>
+</html>

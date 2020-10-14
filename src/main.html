@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/normalize.css">
+    <link rel="stylesheet" href="vendors/slick.css">
+    <link rel="stylesheet" href="vendors/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="vendors/jquery.formstyler.css">
+    <link rel="stylesheet" href="vendors/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Rutector</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__city">
+                        Москва
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Сервис
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Клиентам
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Бренды
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Доставка и оплата
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <a class="header__logo-link" href="#">
+                            <img class="header__logo-img" src="logo/logo.svg" alt="">
+                        </a>
+                        <div class="header__logo-descr">
+                            Поставщик промышленного оборудования
+                        </div>
+                    </div>
+                    <div class="header__main-right">
+                        <div class="header__contact-item">
+                            <a class="header__contact-link" href="#">
+                                <img class="header__contact-img" src="icons/phone.svg" alt="">
+                                Обратный звонок
+                            </a>
+                        </div>
+                        <div class="header__contact-item">
+                            <a class="header__contact-link" href="#">
+                                <img class="header__contact-img" src="icons/mail.svg" alt="">
+                                Напишите нам
+                            </a>
+                        </div>
+                        <div class="header__contact-item">
+                            <div class="header__contact-hours">
+                                09:00 - 18:00 пн-пт
+                            </div>
+                            <a class="header__contact-phone" href="tel:88001000069">
+                                8 800 100-00-69
+                            </a>
+                        </div>
+                        <div class="header__basket">
+                            <div class="header__basket-img">
+                                <img src="icons/basket.svg" alt="">
+                                <span class="header__basket-num">0</span>
+                            </div>
+                            <div class="header__basket-info">
+                                Корзина
+                               <span>0 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__inner">
+                    <button class="header__catalog">
+                        <span>Каталог товаров</span>
+                    </button>
+                    <div class="header__search">
+                        <input class="header__search-input" type="search" placeholder="Поиск товаров. Введите название или артикул">
+                        <button class="header__search-btn"></button>
+                    </div>
+                    <a class="header__promotion" href="#"><span>Акции</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+           <div class="banner__slider">
+                <div class="banner__slider-item">
+                    <img class="banner__slider-img" src="img/main-banner.jpg" alt="">
+                </div>
+                <div class="banner__slider-item">
+                    <img class="banner__slider-img" src="img/main-banner.jpg" alt="">
+                </div>
+                <div class="banner__slider-item">
+                    <img class="banner__slider-img" src="img/main-banner.jpg" alt="">
+                </div>
+                <div class="banner__slider-item">
+                    <img class="banner__slider-img" src="img/main-banner.jpg" alt="">
+                </div>
+           </div>
+        </div>
+    </section>
+
+    <section class="section products">
+        <div class="container">
+            <div class="tabs__wrapper">
+                <a class="tab products__tab section__title" href="#product-tab-1">
+                    Хиты продаж
+                </a>
+                <a class="tab products__tab section__title tab--active" href="#product-tab-2">
+                    Новинки
+                </a>
+            </div>
+            <div class="section__inner">
+                <div id="product-tab-1" class="tabs__content">
+                    <div class="products__slider">
+                        <div class="product__card product__card--bestseller product__card--reviews">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/1.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        Бензиновые мотопомпы
+                                    </div>
+                                    <div class="product__name">
+                                        Бензиновая мотопомпа для средне-загрязненных вод Koshin STH-100X o/s
+                                    </div>
+                                    <a class="product__rate" href="#">
+                                        <div class="rate-yo" data-rateyo-rating="4.5"></div>
+                                        <span>Отзывы (1)</span>
+                                    </a>
+                                    <div class="product__price">
+                                        90 796 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--bestseller product__card--in-basket">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/2.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        Уборочные профессиональные пыле...
+                                    </div>
+                                    <div class="product__name">
+                                        Пылесос профессиональный MERAN VC-1/20 пластиковый бак
+                                    </div>
+                                    <div class="product__price">
+                                        4 950 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзине
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--bestseller">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/3.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        Винтовые компрессоры
+                                    </div>
+                                    <div class="product__name">
+                                        Винтовой компрессор FINI MICRO 4.0-08-200 ES
+                                    </div>
+                                    <div class="product__price">
+                                        318 094 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--bestseller">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/4.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        Повысительные насосы
+                                    </div>
+                                    <div class="product__name">
+                                        Вертикальный многоступенчатый насосный агрегат MXV 32-408
+                                    </div>
+                                    <div class="product__price">
+                                        74 901 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--bestseller">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/5.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        MDR 2
+                                    </div>
+                                    <div class="product__name">
+                                        Реле давления CONDOR MDR 2/11 GEA AAAA 060A080 QIH XXX
+                                    </div>
+                                    <div class="product__price">
+                                        1 788 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--bestseller product__card--reviews">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/1.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        Бензиновые мотопомпы
+                                    </div>
+                                    <div class="product__name">
+                                        Бензиновая мотопомпа для средне-загрязненных вод Koshin STH-100X o/s
+                                    </div>
+                                    <a class="product__rate" href="#">
+                                        <div class="rate-yo" data-rateyo-rating="4.5"></div>
+                                        <span>Отзывы (1)</span>
+                                    </a>
+                                    <div class="product__price">
+                                        90 796 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--bestseller product__card--in-basket">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/2.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        Уборочные профессиональные пыле...
+                                    </div>
+                                    <div class="product__name">
+                                        Пылесос профессиональный MERAN VC-1/20 пластиковый бак
+                                    </div>
+                                    <div class="product__price">
+                                        4 950 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзине
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--bestseller">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/3.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        Винтовые компрессоры
+                                    </div>
+                                    <div class="product__name">
+                                        Винтовой компрессор FINI MICRO 4.0-08-200 ES
+                                    </div>
+                                    <div class="product__price">
+                                        318 094 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--bestseller">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/4.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        Повысительные насосы
+                                    </div>
+                                    <div class="product__name">
+                                        Вертикальный многоступенчатый насосный агрегат MXV 32-408
+                                    </div>
+                                    <div class="product__price">
+                                        74 901 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--bestseller">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/5.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        MDR 2
+                                    </div>
+                                    <div class="product__name">
+                                        Реле давления CONDOR MDR 2/11 GEA AAAA 060A080 QIH XXX
+                                    </div>
+                                    <div class="product__price">
+                                        1 788 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="product-tab-2" class="tabs__content tabs__content--active">
+                    <div class="products__slider">
+                        <div class="product__card product__card--new product__card--reviews">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/1.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        Бензиновые мотопомпы
+                                    </div>
+                                    <div class="product__name">
+                                        Бензиновая мотопомпа для средне-загрязненных вод Koshin STH-100X o/s
+                                    </div>
+                                    <a class="product__rate" href="#">
+                                        <div class="rate-yo" data-rateyo-rating="4.5"></div>
+                                        <span>Отзывы (1)</span>
+                                    </a>
+                                    <div class="product__price">
+                                        90 796 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--new product__card--in-basket">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/2.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        Уборочные профессиональные пыле...
+                                    </div>
+                                    <div class="product__name">
+                                        Пылесос профессиональный MERAN VC-1/20 пластиковый бак
+                                    </div>
+                                    <div class="product__price">
+                                        4 950 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзине
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--new">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/3.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        Винтовые компрессоры
+                                    </div>
+                                    <div class="product__name">
+                                        Винтовой компрессор FINI MICRO 4.0-08-200 ES
+                                    </div>
+                                    <div class="product__price">
+                                        318 094 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--new">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/4.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        Повысительные насосы
+                                    </div>
+                                    <div class="product__name">
+                                        Вертикальный многоступенчатый насосный агрегат MXV 32-408
+                                    </div>
+                                    <div class="product__price">
+                                        74 901 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--new">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/5.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        MDR 2
+                                    </div>
+                                    <div class="product__name">
+                                        Реле давления CONDOR MDR 2/11 GEA AAAA 060A080 QIH XXX
+                                    </div>
+                                    <div class="product__price">
+                                        1 788 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--new product__card--reviews">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/1.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        Бензиновые мотопомпы
+                                    </div>
+                                    <div class="product__name">
+                                        Бензиновая мотопомпа для средне-загрязненных вод Koshin STH-100X o/s
+                                    </div>
+                                    <a class="product__rate" href="#">
+                                        <div class="rate-yo" data-rateyo-rating="4.5"></div>
+                                        <span>Отзывы (1)</span>
+                                    </a>
+                                    <div class="product__price">
+                                        90 796 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--new product__card--in-basket">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/2.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        Уборочные профессиональные пыле...
+                                    </div>
+                                    <div class="product__name">
+                                        Пылесос профессиональный MERAN VC-1/20 пластиковый бак
+                                    </div>
+                                    <div class="product__price">
+                                        4 950 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзине
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--new">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/3.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        Винтовые компрессоры
+                                    </div>
+                                    <div class="product__name">
+                                        Винтовой компрессор FINI MICRO 4.0-08-200 ES
+                                    </div>
+                                    <div class="product__price">
+                                        318 094 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--new">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/4.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        Повысительные насосы
+                                    </div>
+                                    <div class="product__name">
+                                        Вертикальный многоступенчатый насосный агрегат MXV 32-408
+                                    </div>
+                                    <div class="product__price">
+                                        74 901 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__card product__card--new">
+                            <div class="product__card-inner">
+                                <img class="product__img" src="img/products/5.png" alt="">
+                                <div class="product__descr">
+                                    <div class="product__category">
+                                        MDR 2
+                                    </div>
+                                    <div class="product__name">
+                                        Реле давления CONDOR MDR 2/11 GEA AAAA 060A080 QIH XXX
+                                    </div>
+                                    <div class="product__price">
+                                        1 788 ₽
+                                    </div>
+                                    <button class="product__btn">
+                                        в корзину
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banners">
+        <div class="container">
+            <div class="banners__inner">
+                <div class="banners__slider">
+                    <a class="banner-item" href="#" style="width: 278px;">
+                        <div class="banner-item__inner">
+                            <img class="banner-item__img" src="img/slider/1.jpg" alt="">
+                            <div class="banner-item__info">
+                                <h5 class="banner-item__title">
+                                    Бесплатный звонок
+                                </h5>
+                                <div class="banner-item__descr">
+                                    Звоните на короткий номер <b>*5009.</b> <br> С мобильного бесплатно
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="banner-item" href="#">
+                        <div class="banner-item__inner">
+                            <img class="banner-item__img" src="img/slider/2.jpg" alt="">
+                            <div class="banner-item__info">
+                                <h5 class="banner-item__title">
+                                    Можно и в аренду!
+                                </h5>
+                                <div class="banner-item__descr">
+                                    Компрессоры, сварку, мотопомпу и не только… <b>Возьмите напрокат!</b>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="banner-item" href="#">
+                        <div class="banner-item__inner">
+                            <img class="banner-item__img" src="img/slider/3.jpg" alt="">
+                            <div class="banner-item__info">
+                                <h5 class="banner-item__title">
+                                    Как проехать? Легко!
+                                </h5>
+                                <div class="banner-item__descr">
+                                    В наш офис <b>на машине</b> добраться просто. Смотрите видео :)
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="banner-item" href="#">
+                        <div class="banner-item__inner">
+                            <img class="banner-item__img" src="img/slider/4.jpg" alt="">
+                            <div class="banner-item__info">
+                                <h5 class="banner-item__title">
+                                    Карьера в «Рутектор»
+                                </h5>
+                                <div class="banner-item__descr">
+                                    Актуальная информация о вакансиях компании
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="banner-item" href="#">
+                        <div class="banner-item__inner">
+                            <img class="banner-item__img" src="img/slider/1.jpg" alt="">
+                            <div class="banner-item__info">
+                                <h5 class="banner-item__title">
+                                    Бесплатный звонок
+                                </h5>
+                                <div class="banner-item__descr">
+                                    Звоните на короткий номер <b>*5009.</b> <br> С мобильного бесплатно
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="banner-item" href="#">
+                        <div class="banner-item__inner">
+                            <img class="banner-item__img" src="img/slider/2.jpg" alt="">
+                            <div class="banner-item__info">
+                                <h5 class="banner-item__title">
+                                    Можно и в аренду!
+                                </h5>
+                                <div class="banner-item__descr">
+                                    Компрессоры, сварку, мотопомпу и не только… <b>Возьмите напрокат!</b>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="banner-item" href="#">
+                        <div class="banner-item__inner">
+                            <img class="banner-item__img" src="img/slider/3.jpg" alt="">
+                            <div class="banner-item__info">
+                                <h5 class="banner-item__title">
+                                    Как проехать? Легко!
+                                </h5>
+                                <div class="banner-item__descr">
+                                    В наш офис <b>на машине</b> добраться просто.Смотрите видео :)
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="banner-item" href="#">
+                        <div class="banner-item__inner">
+                            <img class="banner-item__img" src="img/slider/4.jpg" alt="">
+                            <div class="banner-item__info">
+                                <h5 class="banner-item__title">
+                                    Карьера в «Рутектор»
+                                </h5>
+                                <div class="banner-item__descr">
+                                    Актуальная информация о вакансиях компании
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section catalog">
+        <div class="container">
+            <h2 class="section__title">
+                Каталог
+            </h2>
+            <div class="section__inner catalog__inner">
+                <a class="more" href="catalog.html">
+                    Весь каталог
+                </a>
+
+                <div class="catalog__wrapper">
+                    <a class="catalog__item" href="#">
+                        <img class="catalog__item-img" src="img/catalog/1.png" alt="">
+                        <div class="catalog__item-title">
+                            <span>Насосное оборудование</span>
+                        </div>
+                    </a>
+                    <a class="catalog__item" href="#">
+                        <img class="catalog__item-img" src="img/catalog/2.png" alt="">
+                        <div class="catalog__item-title">
+                            <span>Мотопомпы</span>
+                        </div>
+                    </a>
+                    <a class="catalog__item" href="#">
+                        <img class="catalog__item-img" src="img/catalog/3.png" alt="">
+                        <div class="catalog__item-title">
+                            <span>Компрессоры и подготовка воздуха</span>
+                        </div>
+                    </a>
+                    <a class="catalog__item" href="#">
+                        <img class="catalog__item-img" src="img/catalog/4.png" alt="">
+                        <div class="catalog__item-title">
+                            <span>Чиллеры</span>
+                        </div>
+                    </a>
+                    <a class="catalog__item" href="#">
+                        <img class="catalog__item-img" src="img/catalog/5.png" alt="">
+                        <div class="catalog__item-title">
+                            <span>Сварочные агрегаты</span>
+                        </div>
+                    </a>
+                    <a class="catalog__item" href="#">
+                        <img class="catalog__item-img" src="img/catalog/6.png" alt="">
+                        <div class="catalog__item-title">
+                            <span>Сварочные аппараты</span>
+                        </div>
+                    </a>
+                    <a class="catalog__item" href="#">
+                        <img class="catalog__item-img" src="img/catalog/7.png" alt="">
+                        <div class="catalog__item-title">
+                            <span>Контактная сварка</span>
+                        </div>
+                    </a>
+                    <a class="catalog__item" href="#">
+                        <img class="catalog__item-img" src="img/catalog/8.png" alt="">
+                        <div class="catalog__item-title">
+                            <span>Автоматизация технологических  процессов</span>
+                        </div>
+                    </a>
+                    <a class="catalog__item" href="#">
+                        <img class="catalog__item-img" src="img/catalog/9.png" alt="">
+                        <div class="catalog__item-title">
+                            <span>Окрасочное оборудование</span>
+                        </div>
+                    </a>
+                    <a class="catalog__item" href="#">
+                        <img class="catalog__item-img" src="img/catalog/10.png" alt="">
+                        <div class="catalog__item-title">
+                            <span>Моечные машины и оборудование</span>
+                        </div>
+                    </a>
+                    <a class="catalog__item" href="#">
+                        <img class="catalog__item-img" src="img/catalog/11.png" alt="">
+                        <div class="catalog__item-title">
+                            <span>Строительное оборудование</span>
+                        </div>
+                    </a>
+                    <a class="catalog__item" href="#">
+                        <img class="catalog__item-img" src="img/catalog/12.png" alt="">
+                        <div class="catalog__item-title">
+                            <span>Роботизация технологических процессов</span>
+                        </div>
+                    </a>
+                    <a class="catalog__item" href="#">
+                        <img class="catalog__item-img" src="img/catalog/13.png" alt="">
+                        <div class="catalog__item-title">
+                            <span>Средства индивидуальной защиты от воздействий окружающей среды</span>
+                        </div>
+                    </a>
+                    <a class="catalog__item" href="#">
+                        <img class="catalog__item-img" src="img/catalog/14.png" alt="">
+                        <div class="catalog__item-title">
+                            <span>Электростанции</span>
+                        </div>
+                    </a>
+                    <a class="catalog__item" href="#">
+                        <img class="catalog__item-img" src="img/catalog/15.png" alt="">
+                        <div class="catalog__item-title">
+                            <span>Запчасти и расходные материалы</span>
+                        </div>
+                    </a>
+                    <a class="catalog__item" href="#">
+                        <img class="catalog__item-img" src="img/catalog/16.png" alt="">
+                        <div class="catalog__item-title">
+                            <span>Абразивный инструмент и оснастка</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section producers">
+        <div class="container">
+            <h2 class="section__title">
+                Производители
+            </h2>
+            <div class="section__inner">
+                <a class="more" href="#">
+                    Все бренды
+                </a>
+
+                <div class="slider">
+                    <a class="slider__item" href="brand-page.html">
+                        <img src="logo/producers/calpeda.png" alt="">
+                    </a>
+                    <a class="slider__item" href="#">
+                        <img src="logo/producers/cea.png" alt="">
+                    </a>
+                    <a class="slider__item" href="#">
+                        <img src="logo/producers/cemsa.png" alt="">
+                    </a>
+                    <a class="slider__item" href="#">
+                        <img src="logo/producers/compair.png" alt="">
+                    </a>
+                    <a class="slider__item" href="#">
+                        <img src="logo/producers/condor.png" alt="">
+                    </a>
+                    <a class="slider__item" href="brand-page.html">
+                        <img src="logo/producers/calpeda.png" alt="">
+                    </a>
+                    <a class="slider__item" href="#">
+                        <img src="logo/producers/cea.png" alt="">
+                    </a>
+                    <a class="slider__item" href="#">
+                        <img src="logo/producers/cemsa.png" alt="">
+                    </a>
+                    <a class="slider__item" href="#">
+                        <img src="logo/producers/compair.png" alt="">
+                    </a>
+                    <a class="slider__item" href="#">
+                        <img src="logo/producers/condor.png" alt="">
+                    </a>
+                </div>
+
+                <div class="video">
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/NNXYybtoV3k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section certificates">
+        <div class="container">
+            <h2 class="section__title">
+                Сертификаты
+            </h2>
+            <div class="section__inner">
+                <a class="more" href="#">
+                    Все сертификаты
+                </a>
+                <div class="slider">
+                    <div class="slider__item">
+                        <img class="slider__img slider__img" src="img/certificates/certificate-1.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img slider__img" src="img/certificates/certificate-2.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img slider__img" src="img/certificates/certificate-3.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img slider__img" src="img/certificates/certificate-4.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img slider__img" src="img/certificates/certificate-5.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img slider__img" src="img/certificates/certificate-1.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img slider__img" src="img/certificates/certificate-2.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img slider__img" src="img/certificates/certificate-3.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img slider__img" src="img/certificates/certificate-4.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img slider__img" src="img/certificates/certificate-5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section news">
+        <div class="container">
+            <h2 class="section__title">
+                Новости и статьи
+            </h2>
+            <div class="section__inner news__inner">
+                <div class="news__left">
+                    <a class="more" href="#">
+                        Все новости
+                    </a>
+                    <ul class="news__list">
+                        <li class="news__item">
+                            <a href="#">
+                                <time class="news__item-date">24.04.2020</time>
+                                <div class="news__item-title">
+                                    Дополнительная скидка на компрессоры до 19.06.2020
+                                </div>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="#">
+                                <time class="news__item-date">20.04.2020</time>
+                                <div class="news__item-title">
+                                    Лучшим дилером Бежецкого «АСО» стала компания «Рутектор»
+                                </div>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="#">
+                                <time class="news__item-date">14.04.2020</time>
+                                <div class="news__item-title">
+                                    В «Новоуренгойском многопрофильном колледже» запущен класс обучения сварщиков с системой обучения
+                                </div>
+                            </a>
+                        </li>
+                        <li class="news__item">
+                            <a href="#">
+                                <time class="news__item-date">06.04.2020</time>
+                                <div class="news__item-title">
+                                    Работаем 5 дней в неделю
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="articles">
+                    <a class="more" href="#">
+                        Все статьи
+                    </a>
+                    <div class="articles__inner">
+                        <a class="articles__item" href="#">
+                            <img class="articles__item-img" src="img/articles/1.jpg" alt="">
+                            <h3 class="articles__item-title">
+                                Cварка кузовов
+                            </h3>
+                            <p class="articles__item-text">
+                                Современные автопроизводители широко применяют новые типы материалов при производстве новых автомобилей. Основные…
+                            </p>
+                        </a>
+                        <a class="articles__item" href="#">
+                            <img class="articles__item-img" src="img/articles/2.jpg" alt="">
+                            <h3 class="articles__item-title">
+                                Диагностика и ремонт компрессоров
+                            </h3>
+                            <p class="articles__item-text">
+                                Практические советы по самостоятельной диагностике неисправностей и подбору запасных частей для компрессоров.…
+                            </p>
+                        </a>
+                        <a class="articles__item" href="#">
+                            <img class="articles__item-img" src="img/articles/3.jpg" alt="">
+                            <h3 class="articles__item-title">
+                                Итальянские насосы – 20 лет безупречной
+                            </h3>
+                            <p class="articles__item-text">
+                                20-летний опыт поставок и сервисного обслуживания итальянских брендов насосной техники Calpeda, Zenit и Varisco подтвердил высокие стандарты…
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="footer__inner">
+                <div class="footer__item footer__contact">
+                    <div class="footer__item-title">
+                        Контакты
+                    </div>
+                    <address class="footer__address">
+                        109456, г. Москва, <span>1-ый Вешняковский проезд,</span> дом 1, строение 11
+                    </address>
+                    <div class="footer__hours">
+                        09:00 - 18:00 пн-пт
+                    </div>
+                    <a class="footer__phone" href="tel:88001000069">
+                        8 800 100-00-69
+                    </a>
+                    <div class="footer__message">
+                        Напишите нам
+                    </div>
+                    <div class="footer__call">
+                        Обратный звонок
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        Полезные ссылки
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Акции
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Проекты
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Полезная информация (PDF)
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Возврат и обмен
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        Компания
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Стань нашим дилером
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Пресс-центр
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Реквизиты
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Условия конфиденциальности
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        Присоединяйтесь
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Подписаться на рассылку
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Обратная связь
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__social">
+                        Присоединяйтесь к нам в социальных сетях
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/youtube.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/instagram.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/facebook.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/vk.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/odnoclassniki.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#">
+                                    <img src="icons/socials/telegram.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="footer__map" href="#">
+                        <span>Карта сайта</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__inner">
+                <div class="footer__bottom-left">
+                    <div class="footer__copyright">
+                        ©1994-2020 «Рутектор» <br>
+                        Все права защищены. При использовании материалов сайта прямая гиперссылка на rutector.ru обязательна
+                    </div>
+                    <div class="footer__logo"><img src="logo/footer-logo.svg" alt=""></div>
+                </div>
+                <ul class="footer__logo-list">
+                    <li class="footer__logo-item">
+                        <a href="#"><img src="logo/visa.svg" alt=""></a>
+                    </li>
+                    <li class="footer__logo-item">
+                        <a href="#"><img src="logo/mastercard.svg" alt=""></a>
+                    </li>
+                    <li class="footer__logo-item">
+                        <a href="#"><img src="logo/mir.svg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+    <!-- <script src="js/jquery.validate.min.js"></script> --> <!-- Валидация форм -->
+    <!-- <script src="js/jquery.maskedinput.min.js"></script> --> <!-- Маска ввода в инпутах -->
+    <script src="js/main.js"></script>
+</body>
+</html>

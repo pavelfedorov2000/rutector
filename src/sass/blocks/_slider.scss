@@ -1,0 +1,36 @@
+.slider {
+    position: relative;
+    max-width: 1202px;
+    margin: 0 auto;
+    &__img {
+        margin: 0 auto;
+        object-fit: cover;
+    }
+    &__btn {
+        @include centerY;
+        z-index: 5;
+        @include btn;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        &--prev {
+            left: -38px;
+        }
+        &--next {
+            right: -38px;
+        }
+    }
+}
+
+.brands-slider {
+    margin: 40px auto;
+}
+
+.banner-slider {
+    max-width: 1320px;
+}
+
+.slick-slide img {
+    margin-left: auto;
+    margin-right: auto;
+}

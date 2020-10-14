@@ -1,0 +1,41 @@
+.count-btn {
+    font-size: 15px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #0054A4;
+    padding: 0 13px;
+    background: #FFFFFF;
+    border: 1px solid #0054A4;
+    border-radius: 3px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+.basket-btn {
+    background: #0054A4;
+    border-radius: 3px;
+    padding: 0 10px 0 40px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-image: url('../icons/basket-btn.svg');
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    @include btn;
+}
+.pre-order__btn {
+    background: #78808C;
+    border-radius: 3px;
+    padding: 0 13px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    @include btn;
+    display: none;
+}

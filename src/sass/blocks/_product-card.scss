@@ -1,0 +1,134 @@
+.product-card {
+    max-width: 290px;
+    min-height: 460px;
+    border: 1px solid #DEE0DD;
+    border-radius: 8px;
+    padding: 15px 10px;
+    &__box {
+        position: relative;
+        &:before, &:after {
+            position: absolute;
+            left: 0px;
+            background: #EF3E42;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        &:before {
+            content: 'ХИТ';
+            top: 70px;
+            padding: 3px 9px;
+            display: none;
+        }
+        &:after {
+            content: '-35%';
+            top: 96px;
+            padding: 3px 7px;
+            display: none;
+        }
+    }
+    &__title {
+        font-size: 16px;
+        line-height: 19px;
+        color: #0054A4;
+        margin-bottom: 22px;
+    }
+    &__img {
+        display: block;
+        max-width: 100%;
+        object-fit: contain;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        min-height: 125px;
+    }
+    &__inner {
+        @include flex;
+        align-items: flex-end;
+    }
+    &__price {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #2B3648;
+    }
+    &__price-old {
+        display: none;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: line-through;
+        color: #617087;
+    }
+    &__request {
+        display: none;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #617087;
+    }
+    &__footer {
+        @include flex;
+        border-top: 2px solid #DEE0DD;
+        padding-top: 10px;
+        margin-top: 12px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    &__more-link {
+        color: #0054A4;
+    }
+    &__postpone-btn {
+        color: #2B3648;
+        background-color: transparent;
+        @include btn;
+    }
+    &--bestseller {
+        .product-card {
+            &__box {
+                &:before {
+                    display: block;
+                }
+            }
+        }
+    }
+    &--pre-order {
+        .pre-order__btn {
+            display: block;
+        }
+        .count-btn, .basket-btn {
+            display: none;
+        }
+    }
+    &--discount {
+        .product-card {
+            &__box {
+                &:after {
+                    display: block;
+                }
+            }
+            &__price {
+                color: #EF3E42;
+            }
+            &__price-old {
+                display: block;
+            }
+        }
+    }
+    &--request {
+        .product-card {
+            &__price {
+                display: none;
+            }
+            &__request {
+                display: block;
+            }
+        }
+    }
+}

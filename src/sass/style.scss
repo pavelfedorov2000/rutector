@@ -1,0 +1,94 @@
+@import 'base/vars';
+@import 'base/mixins';
+
+* {
+   box-sizing: inherit;
+    &:before, &:after {
+        box-sizing: inherit;
+    }
+}
+
+body {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, li {
+    list-style-type: none;
+    padding: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #2B3648;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+textarea {
+    resize: none;
+}
+
+.container {
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    &--big {
+        max-width: 1360px;
+    }
+}
+
+.video {
+    margin-top: 80px;
+}
+
+.rate {
+    cursor: pointer;
+}
+
+@import 'blocks/section';
+@import 'blocks/modals';
+@import 'blocks/buttons';
+@import 'blocks/product-card';
+@import 'blocks/header';
+//@import 'blocks/main';
+@import 'blocks/banner-slider';
+@import 'blocks/products';
+@import 'blocks/banners';
+@import 'blocks/catalog';
+@import 'blocks/certificates';
+@import 'blocks/news';
+@import 'blocks/slider';
+@import 'blocks/footer';
+@import 'blocks/catalog-page';
+@import 'blocks/product-page';
+@import 'blocks/brand-page';
+@import 'blocks/breadcrumbs';
+@import 'blocks/pagination';
+@import 'blocks/filter';
+
+//@import 'base/media';

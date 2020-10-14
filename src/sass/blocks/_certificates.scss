@@ -1,0 +1,25 @@
+.certificates {
+    &__slider {
+        position: relative;
+        max-width: 1202px;
+        margin: 0 auto;
+    }
+    &__slider-item {
+        margin: 0 24px
+    }
+    &__slider-img {
+        display: block;
+        min-height: 136px;
+    }
+    &__slider-btn {
+        width: 36px;
+        height: 36px;
+        &--prev {
+            position: absolute;
+            left: -39px;
+        }
+        &--next {
+            right: -39px;
+        }
+    }
+}
