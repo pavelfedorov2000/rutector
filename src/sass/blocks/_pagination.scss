@@ -1,5 +1,5 @@
 .pagination {
-    margin: 40px 0 10px;
+    margin-bottom: 10px;
     &__box {
         padding: 12px 37px 13px 21px;
         background: #F7F7F7;
@@ -45,6 +45,18 @@
                 color: #FFFFFF;
             }
         }
+    }
+    &__doublearrow-prev {
+        margin-right: 31px;
+    }
+    &__arrow-prev {
+        margin-right: 20px;
+    }
+    &__arrow-next {
+        margin-left: 20px;
+    }
+    &__doublearrow-next {
+        margin-left: 31px;
     }
     &__btn {
         background-color: transparent;

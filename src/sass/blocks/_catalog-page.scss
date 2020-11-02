@@ -26,7 +26,7 @@
         margin: 0 9px;
     }
     &__catalog-item {
-        margin-right: 32px;
+        width: 25%;
         margin-bottom: 10px;
     }
 }
@@ -37,28 +37,6 @@
         border: 1px solid #EFEFEF;
         padding: 22px 12px 40px 21px;
         margin-bottom: 40px;
-    }
-    &__menu-title {
-        position: relative;
-        font-size: 18px;
-        line-height: 22px;
-        color: #EF3E42;
-        padding-left: 29px;
-        span {
-            border-bottom: 1px solid #EF3E42;
-        }
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-image: url('../icons/aside-bell.png');
-            width: 19px;
-            height: 17px;
-        }
-        &:hover {
-            color: #EF3E42; 
-        }
     }
     &__menu-list {
         margin-top: 19px;
@@ -130,7 +108,8 @@
         padding-top: 28px;
     }
     &__card {
-        max-width: 226px;
+        width: 226px;
+        margin: 0;
     }
     &__name {
         margin-bottom: 30px;

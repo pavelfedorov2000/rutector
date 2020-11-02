@@ -1,16 +1,17 @@
 .products {
     &__tab {
         margin-right: 39px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
     &__slider {
         position: relative;
-        max-width: 1282px;
-        margin: 0 auto;
+        //width: 1280px;
         padding-top: 30px;
     }
     &__slider-btn {
-        position: absolute;
-        top: 145px;
+        @include centerY;
         &--prev {
             left: 2px;
         }
@@ -30,21 +31,23 @@
 }
 .section__title.tab--active {
     color: #000000;
-    border-bottom: 3px solid #EF3E42;
+    border-bottom: 3px solid $red;
 }
 
 
 .product {
     &__card {
         position: relative;
+        width: 226px;
         min-height: 444px;
         padding: 29px 9px 10px;
         border: 1px solid #DEE0DD;
         border-radius: 4px;
         cursor: pointer;
+        margin: 0 19px;
         &:before {
             position: absolute;
-            top: 11px;
+            top: 8px;
             left: 9px;
             padding: 3px 9px;
             font-size: 13px;
@@ -57,32 +60,19 @@
         &--new {
             &:before {
                 content: 'НОВИНКА';
-                background: #3DA975;
+                background: $green;
             }
         }
         &--bestseller {
             &:before {
                 content: 'ХИТ';
-                background: #EF3E42;
+                background: $red;
             } 
         }
-        &:hover {
-            .product {
-                &__category, &__name {
-                    color: #0054A4;
-                }
-                &__btn {
-                    background: #1976D3;
-                }
-            }
-        }
-        &--in-basket { 
-            padding-right: 3px;
-            .product__btn {
-                background: #2196F4;
-            }
-        }
         &--reviews {
+            .product__name {
+                min-height: 54px;
+            }
             .product__rate {
                 display: flex;
             }
@@ -96,19 +86,26 @@
         margin-bottom: 18px;
     }
     &__category {
+        min-height: 28px;
         font-size: 12px;
         line-height: 14px;
         color: #617087;
         transition: .3s all;
+        &:hover {
+            color: $main-blue;
+        }
     }
     &__name {
-        max-width: 208px;
-        min-height: 54px;
+        display: block;
+        min-height: 72px;
         font-size: 15px;
         line-height: 18px;
         color: #2B3648;
-        margin-top: 6px;
+        margin: 6px 0 22px;
         transition: .3s all;
+        &:hover {
+            color: $main-blue;
+        }
     }
     &__rate {
         display: none;
@@ -127,7 +124,7 @@
         font-size: 22px;
         line-height: 26px;
         color: #2B3648;
-        margin-top: 22px;
+        //margin-top: 22px;
         &--old {
             font-size: 18px;
             line-height: 22px;
@@ -136,7 +133,7 @@
             margin-top: -22px;
         }
         &--new {
-            color: #EF3E42;
+            color: $red;
             margin-top: 0;
         }
     }
@@ -147,18 +144,9 @@
         color: #617087;
     }
     &__btn {
-        padding: 1px 60px;
-        background: #0054A4;
-        border-radius: 3px;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 40px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        @include btn;
+        width: 100%;
+        height: 42px;
         margin-top: 13px;
-        transition: .3s all;
     }
 }
 

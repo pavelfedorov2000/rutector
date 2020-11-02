@@ -10,14 +10,17 @@
 
 body {
     position: relative;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     min-width: 320px;
     overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2B3648;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,12 +30,11 @@ h1, h2, h3, h4, h5, h6 {
 ul, li {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 p {
-    font-size: 16px;
     line-height: 22px;
-    color: #2B3648;
 }
 
 a {
@@ -49,16 +51,20 @@ img {
     height: auto;
 }
 
+input {
+    outline: none;
+}
+
 textarea {
     resize: none;
 }
 
 .container {
-    max-width: 1320px;
+    max-width: 1360px;
     padding: 0 20px;
     margin: 0 auto;
-    &--big {
-        max-width: 1360px;
+    &--small {
+        max-width: 1320px;
     }
 }
 
@@ -70,12 +76,100 @@ textarea {
     cursor: pointer;
 }
 
+.input {
+    border: 1px solid #ADAEAD;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    padding: 14px 31px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A5A2A5;
+}
+
+.counter-input {
+    padding: 14px 25px;
+    text-align: center;
+}
+
+.card {
+    &__title {
+        min-height: 57px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #0054A4;
+    }
+}
+
+.sale {
+    position: relative;
+    font-size: 18px;
+    line-height: 22px;
+    color: #EF3E42;
+    padding-left: 29px;
+    display: block;
+    margin-bottom: 19px;
+    span {
+        border-bottom: 1px solid #EF3E42;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url('../icons/red-bell.png');
+        width: 19px;
+        height: 17px;
+    }
+    &:hover {
+        color: #EF3E42; 
+    }
+}
+
+.dropzone {
+    width: 100%;
+    min-height: 130px;
+    background: #F7F7F7;
+    border: 1px dashed #ADAEAD;
+    border-radius: 4px;
+    padding: 31px 60px;
+    text-align: center;
+    color: #78808C;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: .3s all;
+    &__title {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 12px;
+    }
+    &__text {
+        max-width: 74%;
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0 auto;
+    }
+}
+.dropzone.hover {
+    background: #ddd;
+    border-color: #aaa;
+}
+
+.dropzone.error {
+    background: #faa;
+    border-color: #f00;
+}
+
+.dropzone.dropp {
+    background: #afa;
+    border-color: #0f0;
+}
+
 @import 'blocks/section';
-@import 'blocks/modals';
 @import 'blocks/buttons';
+@import 'blocks/modals';
 @import 'blocks/product-card';
 @import 'blocks/header';
-//@import 'blocks/main';
+@import 'blocks/basket';
 @import 'blocks/banner-slider';
 @import 'blocks/products';
 @import 'blocks/banners';
@@ -91,4 +185,4 @@ textarea {
 @import 'blocks/pagination';
 @import 'blocks/filter';
 
-//@import 'base/media';
+@import 'base/media';

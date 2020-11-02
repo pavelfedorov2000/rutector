@@ -1,0 +1,80 @@
+.basket {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 70px;
+    z-index: 100;
+    width: 330px;
+    height: auto;
+    //min-height: 497px;
+    background: #FFFFFF;
+    border: 1px solid #ADAEAD;
+    //background: url('../img/basket-wrap.svg') center (center/contain) no-repeat;
+    padding: 19px 12px 35px 16px;
+    &__top {
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #848B99;
+        margin-bottom: 16px;
+        span {
+            color: $red;
+        }
+    }
+    &__products-list {
+        padding-top: 9px;
+        border-top: 1px solid #ADAEAD;
+        border-bottom: 1px solid #ADAEAD;
+        margin-bottom: 16px;
+    }
+    &__product-item {
+        display: flex;
+        margin-bottom: 16px;
+    }
+    &__product-img {
+        width: 64px;
+        height: 64px;
+    }
+    &__product-info {
+        max-width: 189px;
+        margin: 0 13px 0 16px;
+    }
+    &__product-name {
+        font-size: 15px;
+        line-height: 18px;
+        color: $main-blue;
+        margin-bottom: 4px;
+    }
+    &__product-descr {
+        font-size: 13px;
+        line-height: 18px;
+        color: #848B99;
+    }
+    &__product-price {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 18px;
+        color: #000000;
+    }
+    &__remove-btn {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #EFEFEF;
+        @include center;
+        @include btn;
+    }
+    &__sum {
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 16px;
+    }
+    &__link {
+        display: block;
+        width: 208px;
+        height: 43px;
+        margin: 0 auto;
+    }
+}

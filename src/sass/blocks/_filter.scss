@@ -1,8 +1,106 @@
 .filter {
+    margin-bottom: 40px;
     &__box {
         width: 100%;
         min-height: 214px;
         background: #F7F7F7;
         border-radius: 12px;
+        padding: 29px 38px;
+    }
+    &__inner {
+        @include flex;
+        flex-wrap: wrap;
+    }
+    &__select-item {
+        border: none;
+    }
+    .jq-selectbox {
+        &__select {
+            display: flex;
+            align-items: center;
+            width: 278px;
+            height: 40px;
+            padding: 0 9px 0 6px;
+            border: 1px solid #DEE0DD;
+            border-left: none;
+            border-right: none;  
+            border-radius: 0px;
+            box-shadow: none;
+            color: #636563;
+            text-shadow: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 17.5px;
+            transition: .3s all;
+            &:hover {
+                color: $main-blue;
+                .jq-selectbox__trigger-arrow svg path {
+                    fill: $main-blue;
+                }
+            }
+        }
+        &__select-text {
+            width: 100%;
+            color: #636563;
+            overflow: hidden;
+        }
+        &__trigger-arrow {
+            position: absolute;
+            top: 19px;
+            right: 9px;
+            width: 10px;
+            height: 6px;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            background-image: url('../icons/arrows/filter-arrow.svg');
+            transition: .3s all;
+        }
+        &__dropdown {
+            bottom: 0;
+            top: 70%;
+            left: 0;
+            width: 380px;
+            margin: 0;
+            padding: 0;
+            border: none;
+            border-radius: 0;
+            background: #F7F7F7;
+            box-shadow: none;
+            ul {
+                padding: 10px;
+                li {
+                    background: #FFFFFF;
+                    border-radius: 8px;
+                    color: #A7AEB6;
+                    padding: 11px 16px;
+                    margin-bottom: 10px;
+                    transition: .3s all;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &:hover {
+                        color: #2B3648;
+                    }
+                }
+                li.selected {
+                    background: $main-blue;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .jq-selectbox.dropdown.opened {
+        .jq-selectbox {
+            &__select {
+                color: $main-blue;
+            }
+            &__select-text {
+                color: $main-blue;
+            }
+            &__trigger-arrow {
+                transform: rotate(180deg);
+            }
+        }
     }
 }

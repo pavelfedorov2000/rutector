@@ -1,41 +1,120 @@
-.count-btn {
-    font-size: 15px;
-    line-height: 40px;
+.button {
     display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    color: #0054A4;
-    padding: 0 13px;
-    background: #FFFFFF;
-    border: 1px solid #0054A4;
+    //width: 100%;
+    //height: 42px;
+    background-color: $main-blue;
     border-radius: 3px;
-    margin-bottom: 7px;
-    cursor: pointer;
+    padding: 1px 54px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    @include btn;
+    transition: .3s all;
+    &__inner {
+        width: 100%;
+        @include flex;
+    }
+    &:hover {
+        background-color: $hover;
+    }
+    &:active {
+        background-color: $active;
+    }
 }
+
 .basket-btn {
-    background: #0054A4;
-    border-radius: 3px;
-    padding: 0 10px 0 40px;
+    width: 100%;
+    //height: 34px;
+    padding: 0 10px 0 4px;
     font-weight: bold;
-    font-size: 15px;
-    line-height: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background-image: url('../icons/basket-btn.svg');
-    background-repeat: no-repeat;
-    background-position: 4px center;
-    @include btn;
+    //background-image: url('../icons/basket-btn.svg');
+    //background-repeat: no-repeat;
+    //background-position: 4px center;
+    //margin: 0;
+    &__inner {
+        width: 100%;
+        @include flex;
+    }
+    &__img {
+        margin: 0;
+    }
 }
+
+.bill-btn, .one-click-btn {
+    background-color: transparent;
+    color: $main-blue;
+    border: 1px solid $main-blue;
+    &:hover {
+        background-color: transparent;
+        color: $hover;
+        border-color: $hover;
+    }
+}
+
+.bill-btn {
+    width: 100%;
+    //height: 36px;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 0 13px;
+    margin-bottom: 7px;
+}
+
+.one-click-btn {
+    width: 300px;
+    height: 55px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 0 20px;
+    margin-bottom: 12px;
+}
+
+.offer-btn {
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 22px;
+    color: $main-blue;
+    @include btn;
+    span {
+        border-bottom: 1px solid $main-blue;
+    }
+}
+
+.postpone-btn {
+    background-color: transparent;
+    font-size: 15px;
+    line-height: 18px;
+    //color: #2B3648;
+    @include btn;
+    img {
+        display: block;
+        margin-right: 18px;
+    }
+}
+
 .pre-order__btn {
+    width: 136px;
     background: #78808C;
-    border-radius: 3px;
     padding: 0 13px;
     font-weight: bold;
-    font-size: 15px;
-    line-height: 40px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    @include btn;
     display: none;
+}
+
+.minus-btn, .plus-btn {
+    top: 0;
+    //width: 56px;
+    //height: 55px;
+    padding: 19px;
+}
+.minus-btn {
+    border-radius: 4px 0px 0px 4px;
+}
+.plus-btn {
+    border-radius: 0px 4px 4px 0px;
 }

@@ -31,6 +31,8 @@
         }
     }
     &__title {
+        display: block;
+        min-height: 57px;
         font-size: 16px;
         line-height: 19px;
         color: #0054A4;
@@ -38,6 +40,8 @@
     }
     &__img {
         display: block;
+        width: 210px;
+        height: 210px;
         max-width: 100%;
         object-fit: contain;
         margin: 0 auto;
@@ -72,6 +76,7 @@
         font-size: 20px;
         line-height: 24px;
         color: #617087;
+        width: 100%;
     }
     &__footer {
         @include flex;

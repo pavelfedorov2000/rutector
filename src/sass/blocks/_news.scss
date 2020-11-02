@@ -1,12 +1,11 @@
 .news {
-    margin-top: 75px;
-    padding-bottom: 41px;
+    padding-bottom: 80px;
     &__inner {
         display: flex;
         justify-content: space-between;
     }
     &__left {
-        max-width: 491px;
+        width: 491px;
     }
     &__item {
         padding-bottom: 18px;
@@ -28,24 +27,18 @@
         transition: .3s all;
     }
     &__item-title {
-        font-size: 16px;
-        line-height: 19px;
-        color: #2B3648;
         margin-top: 5px;
         transition: .3s all;
     }
 }
 .articles {
     &__inner {
+        width: 672px;
         display: flex;
+        justify-content: space-between;
     }
     &__item {
-        max-width: 202px;
-        margin-right: 33px;
-        &:last-child {
-            max-width: 203px;
-            margin-right: 0;
-        }
+        width: 202px;
         &:hover {
             .articles {
                 &__item-title {
@@ -62,7 +55,7 @@
         object-fit: contain;
     }
     &__item-title {
-        min-height: 38px;
+        min-height: 40px;
         font-weight: bold;
         font-size: 18px;
         line-height: 22px;

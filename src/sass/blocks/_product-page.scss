@@ -5,10 +5,72 @@
         margin-top: 50px;
     }
     &__left {
-        max-width: 574px;
+        width: 574px;
+    }
+    &__slider {
+        margin-bottom: 9px;
+    }
+    &__slider-item {
+        position: relative;
+        width: 100%;
+        height: 552px;
+        border: 1px solid #DEE0DD;
+        border-radius: 4px;
+        img {
+            @include centerXY;
+        }
+        &:before {
+            content: 'Бесплатная доставка';
+            position: absolute;
+            top: 22px;
+            right: 0;
+            background: $red;
+            //width: 251px;
+            //height: 36px;
+            padding: 5px 18px;
+            font-size: 22px;
+            line-height: 26px;
+            color: #FFFFFF;
+        }
+    }
+    &__slider-btn, &__nav-sliderbtn {
+        width: 30px;
+        height: 60px;
+        background: #B2B9C1;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        @include center;
+        &--prev {
+            left: 0;
+        }
+        &--next {
+            right: 0;
+        }
+    }
+    &__nav-slider {
+        .slick-track {
+            display: flex;
+        }
+        .slick-slide.slick-current.slick-active {
+            border: none;
+            border-bottom: 3px solid $hover;
+            border-radius: 0;
+            outline: none;
+        }
+    }
+    &__nav-item {
+        position: relative;
+        width: 182px;
+        height: 160px;
+        border: 1px solid #DEE0DD;
+        border-radius: 4px;
+        margin: 0 5px;
+        cursor: pointer;
+        img {
+            @include centerXY;
+        }
     }
     &__card {
-        max-width: 708px;
+        width: 708px;
     }
     &__card-top {
         display: flex;
@@ -20,6 +82,9 @@
         line-height: 18px;
         color: #617087;
         margin-right: 20px;
+    }
+    &__card-rate {
+        z-index: 90;
     }
     &__card-title {
         font-weight: normal;
@@ -59,6 +124,47 @@
         line-height: 18px;
         color: #EF3E42;
         margin-bottom: 40px;
+    }
+    &__card-buttons {
+        width: 510px;
+        @include flex;
+        flex-wrap: wrap;
+        margin-bottom: 34px;
+        .basket-btn {
+            width: 300px;
+            height: 55px;
+            padding: 0 25px 0 11px;
+            font-size: 18px;
+            margin-bottom: 14px;
+        }
+        .bill-btn {
+            width: 190px;
+            height: 55px;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 12px;
+        }
+    }
+    &__card-counter {
+        display: flex;
+        width: 188px;
+        height: 55px;
+        margin-bottom: 14px;
+        input {
+            width: 76px;
+            height: 100%;
+            border: 1px solid #DEE0DD;
+            border-left: 0;
+            border-right: 0;
+            border-radius: 0;
+            //box-shadow: none;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000000;
+            @include btn;
+        }
     }
     &__info-itemleft {
         width: 276px;
@@ -157,8 +263,12 @@
         padding-bottom: 10px;
         border-bottom: 1px dashed #0054A4;
         margin-right: 40px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
     &__section-inner {
+        padding-top: 40px;
         margin-top: 12px;
     }
     &__questions-title {
@@ -177,22 +287,26 @@
     &__form-inputs {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__form-input {
         width: 618px;
-        padding: 13px 42px 15px;
+        padding: 14px 42px;
     }
     &__form-textarea {
         width: 100%;
+        min-height: 86px;
+        margin-top: 13px;
     }
     &__form-footer {
-        display: flex;
-        align-items: center;
+        @include flex;
     }
     &__form-btn {
+        width: 208px;
+        height: 43px;
         background: rgba(0, 84, 164, 0.55);
         border-radius: 3px;
-        padding: 2px 24px 1px 25px;
+        padding: 1px 24px;
         font-weight: 500;
         font-size: 15px;
         line-height: 40px;
@@ -200,14 +314,14 @@
         text-transform: uppercase;
         color: #FFFFFF;
         @include btn;
-        margin-right: 40px;
     }
     &__form-warning {
+        max-width: 731px;
         font-size: 14px;
         line-height: 17px;
         color: #78808C;
     }
-
+    
     &__review-header {
         display: flex;
         //align-items: center;
@@ -294,6 +408,7 @@
         line-height: 18px;
         color: #0054A4;
         margin-bottom: 35px;
+        cursor: pointer;
         span {
             border-bottom: 1px solid #0054A4;
         }
@@ -324,16 +439,7 @@
         margin-top: 10px;
     }
     &__enter-btn {
-        background: #0054A4;
-        border-radius: 3px;
         padding: 1px 47px;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 40px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        @include btn;
         margin: 20px 0 10px;
     }
     &__review-form {
@@ -368,13 +474,23 @@
     &__review-newrateyo {
         margin-left: 20px;
     }
+    &__review-checkboxes {
+        display: flex;
+        align-items: center;
+    }
     &__review-checkbox {
         margin-left: 20px;
     }
     &__review-label {
         margin-left: 10px;
     }
-
+    &__review-newitem {
+        @include flex;
+        margin-bottom: 10px;
+    }
+    &__review-text {
+        width: 91%;
+    }
     &__documents {
         display: flex;
         padding-top: 46px;
@@ -403,6 +519,14 @@
     }
 }
 
+.product-page__card-top.tablet {
+    display: none;
+}
+
+.product-page__review-header.mobile {
+    display: none;
+}
+
 .product-features {
     &__list-item {
         margin-bottom: 20px;
@@ -420,4 +544,11 @@
 }
 .tabs__content {
     padding-top: 30px;
+}
+
+.popular-products {
+    &__slider-item {
+        max-width: 100%;
+        margin: 0 14px;
+    }
 }
