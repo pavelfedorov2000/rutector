@@ -125,45 +125,6 @@ textarea {
     }
 }
 
-.dropzone {
-    width: 100%;
-    min-height: 130px;
-    background: #F7F7F7;
-    border: 1px dashed #ADAEAD;
-    border-radius: 4px;
-    padding: 31px 60px;
-    text-align: center;
-    color: #78808C;
-    margin-bottom: 30px;
-    cursor: pointer;
-    transition: .3s all;
-    &__title {
-        font-size: 18px;
-        line-height: 22px;
-        margin-bottom: 12px;
-    }
-    &__text {
-        max-width: 74%;
-        font-size: 14px;
-        line-height: 17px;
-        margin: 0 auto;
-    }
-}
-.dropzone.hover {
-    background: #ddd;
-    border-color: #aaa;
-}
-
-.dropzone.error {
-    background: #faa;
-    border-color: #f00;
-}
-
-.dropzone.dropp {
-    background: #afa;
-    border-color: #0f0;
-}
-
 @import 'blocks/section';
 @import 'blocks/buttons';
 @import 'blocks/modals';
@@ -184,5 +145,6 @@ textarea {
 @import 'blocks/breadcrumbs';
 @import 'blocks/pagination';
 @import 'blocks/filter';
+@import 'blocks/dropzone';
 
 @import 'base/media';

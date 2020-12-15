@@ -224,7 +224,6 @@
         height: 100%;
         padding: 11px 13px;
         color: rgba(82, 92, 111, 0.71);
-        @include btn;
         &::placeholder {
             color: rgba(82, 92, 111, 0.71);
         }
